@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفاصيل الكورس - LalaLand</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="CSS/dashboard_style.css">
+    <style>
+        /* Specific Styles for Course Details Page */
+        .details-container {
+            max-width: 1000px;
+            margin: 40px auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            overflow: hidden;
+            padding: 0;
+        }
+
+        .course-header {
+            background: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        
+        .course-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(108, 92, 231, 0.7);
+            z-index: -1;
+        }
+
+        .course-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 800;
+            position: relative;
+            z-index: 1;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .course-header p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+            position: relative;
+            z-index: 1;
+            text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .course-content {
+            padding: 40px;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+        }
+
+        .info-section h2 {
+            color: #2d3436;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #f1f2f6;
+            padding-bottom: 10px;
+        }
+
+        .info-section p {
+            line-height: 1.8;
+            color: #636e72;
+            margin-bottom: 20px;
+        }
+
+        .teacher-card-small {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .teacher-img {
+            width: 60px;
+            height: 60px;
+            background: #dfe6e9;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+
+        .sidebar-info {
+            background: #fdfdfd;
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid #eee;
+            height: fit-content;
+        }
+
+        .price-tag {
+            font-size: 2rem;
+            color: #00b894;
+            font-weight: 800;
+            margin-bottom: 20px;
+            display: block;
+            text-align: center;
+        }
+
+        .btn-buy {
+            width: 100%;
+            padding: 15px;
+            background-color: #00b894;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .btn-buy:hover {
+            transform: translateY(-3px);
+            background-color: #00a884;
+        }
+
+        .btn-back {
+            display: inline-block;
+            margin-top: 20px;
+            color: #6c5ce7;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        /* Course Content Styles */
+        .course-content-list {
+            margin-top: 40px;
+        }
+        .content-item {
+            background: #fff;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            overflow: hidden;
+        }
+        .content-header {
+            background: #f8f9fa;
+            padding: 15px;
+            font-weight: bold;
+            border-bottom: 1px solid #eee;
+        }
+        .content-body {
+            padding: 0 15px;
+        }
+        .video-item {
+            display: flex;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid #f1f1f1;
+        }
+        .video-item:last-child { border-bottom: none; }
+        .video-icon { margin-left: 10px; color: #6c5ce7; }
+        .video-link { text-decoration: none; color: #2d3436; flex-grow: 1; transition: color 0.2s; }
+        .video-link:hover { color: #6c5ce7; }
+        .video-link.locked { color: #b2bec3; pointer-events: none; cursor: default; }
+        .lock-icon { margin-right: auto; font-size: 0.9rem; }
+
+        @media (max-width: 768px) {
+            .course-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Bar (Simplified) -->
+    <header class="top-bar" style="margin: 20px; border-radius: 15px;">
+        <div class="logo" style="font-weight: 800; font-size: 1.5rem; color: #6c5ce7;">LalaLand</div>
+        <div class="user-info">
+            <button id="darkModeToggle" class="btn-toggle" style="margin-left: 15px; font-size: 1.2rem; cursor: pointer; background: none; border: none;">🌙</button>
+            <span id="userBalanceDisplay" style="background: #ffeaa7; padding: 5px 15px; border-radius: 20px; font-weight: bold; color: #d35400;">
+                الرصيد: 0 ج.م
+            </span>
+            <div class="avatar">👤</div>
+        </div>
+    </header>
+
+    <div class="details-container">
+        <div class="course-header">
+            <h1 id="courseTitle">جاري التحميل...</h1>
+            <p id="courseSubtitle">وصف قصير للكورس</p>
+        </div>
+
+        <div class="course-content">
+            <!-- Right Column: Details -->
+            <div class="info-section">
+                <h2>عن الكورس</h2>
+                <p id="courseDescription">
+                    تفاصيل الكورس ستظهر هنا.
+                </p>
+                
+                <h2>عن المعلم</h2>
+                <div class="teacher-card-small">
+                    <div class="teacher-img">👨‍🏫</div>
+                    <div>
+                        <h3 id="teacherName">اسم المعلم</h3>
+                        <p id="teacherTitle">التخصص</p>
+                    </div>
+                </div>
+
+                <!-- Course Content Section -->
+                <div class="course-content-list">
+                    <h2>محتوى الكورس</h2>
+                    <div id="courseContentContainer">
+                        <p style="color: #636e72;">لا يوجد محتوى مضاف لهذا الكورس بعد.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left Column: Action -->
+            <aside class="sidebar-info">
+                <span class="price-tag" id="coursePrice">200 ج.م</span>
+                <button id="btnBuy" class="btn-buy">اشترك الآن</button>
+                <div style="text-align: center;">
+                    <a href="dashboard.html" class="btn-back">← العودة للوحة التحكم</a>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <script src="JS/theme.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            // 1. Get Course ID from URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const courseId = urlParams.get('id');
+
+            // 2. Load User Balance
+            let balance = parseInt(localStorage.getItem('userBalance')) || 1000;
+            updateBalanceDisplay(balance);
+
+            // 3. Load Course Details from Database API
+            try {
+                const response = await fetch(`PHP/courses.php?action=list`);
+                const coursesData = await response.json();
+                
+                if (!coursesData.success || !coursesData.data) {
+                    alert('خطأ في تحميل الكورس');
+                    window.location.href = 'dashboard.html';
+                    return;
+                }
+
+                // Find the course by ID
+                const course = coursesData.data.find(c => c.id == courseId);
+                
+                if (!course) {
+                    alert('كورس غير موجود!');
+                    window.location.href = 'dashboard.html';
+                    return;
+                }
+
+                // Display course details
+                document.getElementById('courseTitle').textContent = course.title;
+                document.getElementById('courseDescription').textContent = course.description || 'لا يوجد وصف للكورس حالياً';
+                document.getElementById('coursePrice').textContent = course.price + ' ج.م';
+                document.getElementById('teacherName').textContent = course.teacher_name || 'معلم';
+                document.getElementById('teacherTitle').textContent = 'معلم بالمنصة';
+
+                // Apply wallpaper to course header if exists
+                const courseHeader = document.querySelector('.course-header');
+                if (course.wallpaper) {
+                    courseHeader.style.backgroundImage = `url('${course.wallpaper}')`;
+                }
+
+                // Check if already enrolled from backend
+                const currentUser = JSON.parse(sessionStorage.getItem('currentUser'));
+                let isEnrolled = false;
+                
+                if (currentUser && currentUser.id) {
+                    try {
+                        const enrollmentResponse = await fetch(`PHP/enrollments.php?action=list&student_id=${currentUser.id}`);
+                        const enrollmentData = await enrollmentResponse.json();
+                        if (enrollmentData.success && enrollmentData.data) {
+                            // Check if this specific course is in the enrolled courses list
+                            isEnrolled = enrollmentData.data.some(e => e.id == courseId);
+                        }
+                    } catch (e) {
+                        console.error('Error checking enrollment:', e);
+                    }
+                }
+
+                // Update button state based on enrollment status
+                const btnBuy = document.getElementById('btnBuy');
+                if (isEnrolled) {
+                    btnBuy.textContent = 'تم الاشتراك ✅';
+                    btnBuy.disabled = true;
+                    btnBuy.style.backgroundColor = '#b2bec3';
+                    btnBuy.style.cursor = 'default';
+                } else {
+                    // Handle Buy Action - Navigate to Payment Page
+                    btnBuy.addEventListener('click', function() {
+                        const coursePrice = course.price || 0;
+                        
+                        // Redirect to payment page with course details
+                        const paymentUrl = `payment.html?course_id=${courseId}&price=${coursePrice}&title=${encodeURIComponent(course.title)}&course_name=${encodeURIComponent(course.title)}`;
+                        window.location.href = paymentUrl;
+                    });
+                }
+
+            } catch (error) {
+                console.error('Error loading course:', error);
+                alert('خطأ في تحميل الكورس');
+                window.location.href = 'dashboard.html';
+            }
+
+            function updateBalanceDisplay(amount) {
+                document.getElementById('userBalanceDisplay').textContent = `الرصيد: ${amount} ج.م`;
+            }
+        });
+    </script>
+    <!-- Notification Container -->
+    <div id="notification-container"></div>
+</body>
+</html>

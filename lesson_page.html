@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مشاهدة الدرس - LalaLand</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Video.js CSS -->
+    <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
+    <link rel="stylesheet" href="CSS/lesson_style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="lesson-header">
+        <div class="header-right">
+            <div class="logo">LalaLand</div>
+            <h2 id="courseTitle" style="color: white; margin: 0; font-size: 1.3rem;">عنوان الكورس</h2>
+        </div>
+        <div class="header-left">
+            <button id="darkModeToggle" class="btn-toggle" aria-label="Toggle Dark Mode">🌙</button>
+            <button id="backToCourseButton" class="btn-back" onclick="window.location.href='dashboard.html'">عودة للدوراتي</button>
+        </div>
+    </header>
+
+    <main class="lesson-container">
+        <!-- Course Header Section with Wallpaper -->
+        <section class="video-section">
+            <div class="video-wrapper" id="videoWrapper" style="display: flex; align-items: center; justify-content: center; color: white; font-size: 2rem;">
+                
+            </div>
+        </section>
+
+        <!-- Course Content (Sections and Videos) -->
+        <section class="lesson-details">
+            <div id="courseContentSection">
+                <h2>محتوى الكورس</h2>
+                <div id="courseSections" class="course-sections">
+                    <p style="text-align: center; color: #636e72;">جاري التحميل...</p>
+                </div>
+            </div>
+
+            <!-- Lesson Details -->
+            <div id="lessonDetailsSection" style="display: none;">
+                <h1 id="lessonTitle">عنوان الدرس الافتراضي</h1>
+                <p id="lessonDescription">وصف الدرس سيظهر هنا. هذا النص هو مجرد مثال لتوضيح مكان الوصف.</p>
+                
+                <div class="lesson-materials">
+                    <h3>ملحقات الدرس</h3>
+                    <ul class="materials-list">
+                        <li><a href="#" download>📄 ملخص الدرس (PDF)</a></li>
+                        <li><a href="#" download>📝 واجب منزلي</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Scripts -->
+    <script src="JS/theme.js"></script>
+    <script src="JS/lesson_script.js"></script>
+    <!-- Notification Container -->
+    <div id="notification-container"></div>
+</body>
+</html>

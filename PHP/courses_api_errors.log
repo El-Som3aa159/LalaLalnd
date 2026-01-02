@@ -1,0 +1,2437 @@
+[01-Jan-2026 13:51:56 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 13:51:56 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 13:51:56 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 13:51:56 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 13:51:56 Europe/Berlin] Exception in courses_api: Unknown column 'updated_at' in 'field list'
+[01-Jan-2026 13:52:34 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 13:52:34 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 13:52:34 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 13:52:34 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 13:52:34 Europe/Berlin] Exception in courses_api: Unknown column 'updated_at' in 'field list'
+[01-Jan-2026 13:52:41 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 13:52:41 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 13:52:41 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 13:52:41 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 13:52:41 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 13:58:15 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 13:58:15 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 13:58:15 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 13:58:15 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 13:58:15 Europe/Berlin] Exception in courses_api: Unknown column 'updated_at' in 'field list'
+[01-Jan-2026 13:58:50 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 13:58:50 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 13:58:50 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 13:58:50 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 13:58:50 Europe/Berlin] Exception in courses_api: Unknown column 'updated_at' in 'field list'
+[01-Jan-2026 13:59:01 Europe/Berlin] Courses API called - Action: create_course
+[01-Jan-2026 13:59:01 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 13:59:01 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 13:59:01 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 13:59:01 Europe/Berlin] createCourse called with userId: 11
+[01-Jan-2026 13:59:01 Europe/Berlin] Course data - Title: fffffffffff, Subtitle: fffffffffffff, Price: 25, Color: #6c5ce7
+[01-Jan-2026 13:59:01 Europe/Berlin] Preparing SQL: INSERT INTO courses (title, subtitle, description, teacher_id, price, image_color, created_at, updated_at) 
+              VALUES (?, ?, ?, ?, ?, ?, NOW(), NOW())
+[01-Jan-2026 13:59:01 Europe/Berlin] Exception in courses_api: Unknown column 'updated_at' in 'field list'
+[01-Jan-2026 14:00:17 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 14:00:17 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 14:00:17 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 14:00:17 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 14:00:17 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 14:00:57 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 14:00:57 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 14:00:57 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 14:00:57 Europe/Berlin] POST teacher_id: 1
+[01-Jan-2026 14:00:57 Europe/Berlin] User 1 is not a teacher, role: 
+[01-Jan-2026 14:02:13 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 14:02:13 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 14:02:13 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 14:02:13 Europe/Berlin] POST teacher_id: 1
+[01-Jan-2026 14:02:13 Europe/Berlin] User 1 is not a teacher, role: 
+[01-Jan-2026 14:02:17 Europe/Berlin] Courses API called - Action: create_course
+[01-Jan-2026 14:02:17 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 14:02:17 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 14:02:17 Europe/Berlin] POST teacher_id: 1
+[01-Jan-2026 14:02:17 Europe/Berlin] User 1 is not a teacher, role: 
+[01-Jan-2026 14:03:24 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 14:03:24 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 14:03:24 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 14:03:24 Europe/Berlin] POST teacher_id: 1
+[01-Jan-2026 14:03:24 Europe/Berlin] User 1 is not a teacher, role: 
+[01-Jan-2026 14:03:47 Europe/Berlin] Courses API called - Action: create_course
+[01-Jan-2026 14:03:47 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 14:03:47 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 14:03:47 Europe/Berlin] POST teacher_id: 1
+[01-Jan-2026 14:03:47 Europe/Berlin] User 1 is not a teacher, role: 
+[01-Jan-2026 14:03:52 Europe/Berlin] Courses API called - Action: create_course
+[01-Jan-2026 14:03:52 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 14:03:52 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 14:03:52 Europe/Berlin] POST teacher_id: 1
+[01-Jan-2026 14:03:52 Europe/Berlin] User 1 is not a teacher, role: 
+[01-Jan-2026 14:06:07 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 14:06:07 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 14:06:07 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 14:06:07 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 14:06:07 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 14:06:30 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 14:06:30 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 14:06:30 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 14:06:30 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 14:06:30 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 14:06:30 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 14:06:30 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 14:06:30 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 14:06:30 Europe/Berlin] Exception in courses_api: Unknown column 'updated_at' in 'field list'
+[01-Jan-2026 14:06:42 Europe/Berlin] Courses API called - Action: create_course
+[01-Jan-2026 14:06:42 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 14:06:42 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 14:06:42 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 14:06:42 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 14:06:42 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 14:06:42 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 14:06:42 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 14:06:42 Europe/Berlin] createCourse called with userId: 11
+[01-Jan-2026 14:06:42 Europe/Berlin] Course data - Title: dddd, Subtitle: ddddd, Price: 25, Color: #6c5ce7
+[01-Jan-2026 14:06:42 Europe/Berlin] Preparing SQL: INSERT INTO courses (title, subtitle, description, teacher_id, price, image_color, created_at, updated_at) 
+              VALUES (?, ?, ?, ?, ?, ?, NOW(), NOW())
+[01-Jan-2026 14:06:42 Europe/Berlin] Exception in courses_api: Unknown column 'updated_at' in 'field list'
+[01-Jan-2026 14:06:43 Europe/Berlin] Courses API called - Action: create_course
+[01-Jan-2026 14:06:43 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 14:06:43 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 14:06:43 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 14:06:43 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 14:06:43 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 14:06:43 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 14:06:43 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 14:06:43 Europe/Berlin] createCourse called with userId: 11
+[01-Jan-2026 14:06:43 Europe/Berlin] Course data - Title: dddd, Subtitle: ddddd, Price: 25, Color: #6c5ce7
+[01-Jan-2026 14:06:43 Europe/Berlin] Preparing SQL: INSERT INTO courses (title, subtitle, description, teacher_id, price, image_color, created_at, updated_at) 
+              VALUES (?, ?, ?, ?, ?, ?, NOW(), NOW())
+[01-Jan-2026 14:06:43 Europe/Berlin] Exception in courses_api: Unknown column 'updated_at' in 'field list'
+[01-Jan-2026 14:07:55 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 14:07:55 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 14:07:55 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 14:07:55 Europe/Berlin] POST teacher_id: 12
+[01-Jan-2026 14:07:55 Europe/Berlin] teacher_id from POST: 12
+[01-Jan-2026 14:07:55 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 14:07:55 Europe/Berlin] Teacher ID 12 found in database
+[01-Jan-2026 14:07:55 Europe/Berlin] Authentication successful - User 12 is teacher
+[01-Jan-2026 14:07:55 Europe/Berlin] Exception in courses_api: Unknown column 'updated_at' in 'field list'
+[01-Jan-2026 14:08:11 Europe/Berlin] Courses API called - Action: create_course
+[01-Jan-2026 14:08:11 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 14:08:11 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 14:08:11 Europe/Berlin] POST teacher_id: 12
+[01-Jan-2026 14:08:11 Europe/Berlin] teacher_id from POST: 12
+[01-Jan-2026 14:08:11 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 14:08:11 Europe/Berlin] Teacher ID 12 found in database
+[01-Jan-2026 14:08:11 Europe/Berlin] Authentication successful - User 12 is teacher
+[01-Jan-2026 14:08:11 Europe/Berlin] createCourse called with userId: 12
+[01-Jan-2026 14:08:11 Europe/Berlin] Course data - Title: xxxxx, Subtitle: xxxxxx, Price: 25, Color: #6c5ce7
+[01-Jan-2026 14:08:11 Europe/Berlin] Preparing SQL: INSERT INTO courses (title, subtitle, description, teacher_id, price, image_color, created_at, updated_at) 
+              VALUES (?, ?, ?, ?, ?, ?, NOW(), NOW())
+[01-Jan-2026 14:08:11 Europe/Berlin] Exception in courses_api: Unknown column 'updated_at' in 'field list'
+[01-Jan-2026 14:08:19 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 14:08:19 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 14:08:19 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 14:08:19 Europe/Berlin] POST teacher_id: 12
+[01-Jan-2026 14:08:19 Europe/Berlin] teacher_id from POST: 12
+[01-Jan-2026 14:08:19 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 14:08:19 Europe/Berlin] Teacher ID 12 found in database
+[01-Jan-2026 14:08:19 Europe/Berlin] Authentication successful - User 12 is teacher
+[01-Jan-2026 14:08:19 Europe/Berlin] Exception in courses_api: Unknown column 'updated_at' in 'field list'
+[01-Jan-2026 14:09:13 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 14:09:13 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 14:09:13 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 14:09:13 Europe/Berlin] POST teacher_id: 12
+[01-Jan-2026 14:09:13 Europe/Berlin] teacher_id from POST: 12
+[01-Jan-2026 14:09:13 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 14:09:13 Europe/Berlin] Teacher ID 12 found in database
+[01-Jan-2026 14:09:13 Europe/Berlin] Authentication successful - User 12 is teacher
+[01-Jan-2026 14:09:13 Europe/Berlin] Exception in courses_api: Unknown column 'updated_at' in 'field list'
+[01-Jan-2026 14:09:15 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 14:09:15 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 14:09:15 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 14:09:15 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 14:09:15 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 14:09:16 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 14:09:16 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 14:09:16 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 14:09:16 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 14:09:16 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 14:09:17 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 14:09:17 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 14:09:17 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 14:09:17 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 14:09:17 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 14:11:26 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 14:11:26 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 14:11:26 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 14:11:26 Europe/Berlin] POST teacher_id: 1
+[01-Jan-2026 14:11:26 Europe/Berlin] teacher_id from POST: 1
+[01-Jan-2026 14:11:26 Europe/Berlin] Teacher check query result rows: 0
+[01-Jan-2026 14:11:26 Europe/Berlin] Teacher ID 1 NOT found in database - treating as teacher anyway for testing
+[01-Jan-2026 14:11:26 Europe/Berlin] Authentication successful - User 1 is teacher
+[01-Jan-2026 14:11:26 Europe/Berlin] Exception in courses_api: Unknown column 'updated_at' in 'field list'
+[01-Jan-2026 14:11:54 Europe/Berlin] Courses API called - Action: create_course
+[01-Jan-2026 14:11:54 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 14:11:54 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 14:11:54 Europe/Berlin] POST teacher_id: 1
+[01-Jan-2026 14:11:54 Europe/Berlin] teacher_id from POST: 1
+[01-Jan-2026 14:11:54 Europe/Berlin] Teacher check query result rows: 0
+[01-Jan-2026 14:11:54 Europe/Berlin] Teacher ID 1 NOT found in database - treating as teacher anyway for testing
+[01-Jan-2026 14:11:54 Europe/Berlin] Authentication successful - User 1 is teacher
+[01-Jan-2026 14:11:54 Europe/Berlin] createCourse called with userId: 1
+[01-Jan-2026 14:11:54 Europe/Berlin] Course data - Title: كورس اختبار #1767273114135, Subtitle: وصف فرعي, Price: 99, Color: #6c5ce7
+[01-Jan-2026 14:11:54 Europe/Berlin] Preparing SQL: INSERT INTO courses (title, subtitle, description, teacher_id, price, image_color, created_at, updated_at) 
+              VALUES (?, ?, ?, ?, ?, ?, NOW(), NOW())
+[01-Jan-2026 14:11:54 Europe/Berlin] Exception in courses_api: Unknown column 'updated_at' in 'field list'
+[01-Jan-2026 14:14:03 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 14:14:03 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 14:14:03 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 14:14:03 Europe/Berlin] POST teacher_id: 1
+[01-Jan-2026 14:14:03 Europe/Berlin] teacher_id from POST: 1
+[01-Jan-2026 14:14:03 Europe/Berlin] Teacher check query result rows: 0
+[01-Jan-2026 14:14:03 Europe/Berlin] Teacher ID 1 NOT found in database - treating as teacher anyway for testing
+[01-Jan-2026 14:14:03 Europe/Berlin] Authentication successful - User 1 is teacher
+[01-Jan-2026 14:14:14 Europe/Berlin] Courses API called - Action: create_course
+[01-Jan-2026 14:14:14 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 14:14:14 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 14:14:14 Europe/Berlin] POST teacher_id: 1
+[01-Jan-2026 14:14:14 Europe/Berlin] teacher_id from POST: 1
+[01-Jan-2026 14:14:14 Europe/Berlin] Teacher check query result rows: 0
+[01-Jan-2026 14:14:14 Europe/Berlin] Teacher ID 1 NOT found in database - treating as teacher anyway for testing
+[01-Jan-2026 14:14:14 Europe/Berlin] Authentication successful - User 1 is teacher
+[01-Jan-2026 14:14:14 Europe/Berlin] createCourse called with userId: 1
+[01-Jan-2026 14:14:14 Europe/Berlin] Course data - Title: كورس اختبار #1767273254393, Subtitle: وصف فرعي, Price: 99, Color: #6c5ce7
+[01-Jan-2026 14:14:14 Europe/Berlin] Preparing SQL: INSERT INTO courses (title, subtitle, description, teacher_id, price, image_color, created_at) 
+              VALUES (?, ?, ?, ?, ?, ?, NOW())
+[01-Jan-2026 14:14:14 Europe/Berlin] Binding parameters: s, s, s, i, d, s
+[01-Jan-2026 14:14:14 Europe/Berlin] Exception in courses_api: Cannot add or update a child row: a foreign key constraint fails (`lalaland_db`.`courses`, CONSTRAINT `courses_ibfk_1` FOREIGN KEY (`teacher_id`) REFERENCES `teachers` (`id`) ON DELETE SET NULL)
+[01-Jan-2026 14:14:27 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 14:14:27 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 14:14:27 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 14:14:27 Europe/Berlin] POST teacher_id: 12
+[01-Jan-2026 14:14:27 Europe/Berlin] teacher_id from POST: 12
+[01-Jan-2026 14:14:27 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 14:14:27 Europe/Berlin] Teacher ID 12 found in database
+[01-Jan-2026 14:14:27 Europe/Berlin] Authentication successful - User 12 is teacher
+[01-Jan-2026 14:14:30 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 14:14:30 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 14:14:30 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 14:14:30 Europe/Berlin] POST teacher_id: 12
+[01-Jan-2026 14:14:30 Europe/Berlin] teacher_id from POST: 12
+[01-Jan-2026 14:14:30 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 14:14:30 Europe/Berlin] Teacher ID 12 found in database
+[01-Jan-2026 14:14:30 Europe/Berlin] Authentication successful - User 12 is teacher
+[01-Jan-2026 14:14:39 Europe/Berlin] Courses API called - Action: create_course
+[01-Jan-2026 14:14:39 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 14:14:39 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 14:14:39 Europe/Berlin] POST teacher_id: 12
+[01-Jan-2026 14:14:39 Europe/Berlin] teacher_id from POST: 12
+[01-Jan-2026 14:14:39 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 14:14:39 Europe/Berlin] Teacher ID 12 found in database
+[01-Jan-2026 14:14:39 Europe/Berlin] Authentication successful - User 12 is teacher
+[01-Jan-2026 14:14:39 Europe/Berlin] createCourse called with userId: 12
+[01-Jan-2026 14:14:39 Europe/Berlin] Course data - Title: hhhhh, Subtitle: hhhhhh, Price: 25, Color: #6c5ce7
+[01-Jan-2026 14:14:39 Europe/Berlin] Preparing SQL: INSERT INTO courses (title, subtitle, description, teacher_id, price, image_color, created_at) 
+              VALUES (?, ?, ?, ?, ?, ?, NOW())
+[01-Jan-2026 14:14:39 Europe/Berlin] Binding parameters: s, s, s, i, d, s
+[01-Jan-2026 14:14:39 Europe/Berlin] Course created successfully with ID: 5
+[01-Jan-2026 14:14:39 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 14:14:39 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 14:14:39 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 14:14:39 Europe/Berlin] POST teacher_id: 12
+[01-Jan-2026 14:14:39 Europe/Berlin] teacher_id from POST: 12
+[01-Jan-2026 14:14:39 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 14:14:39 Europe/Berlin] Teacher ID 12 found in database
+[01-Jan-2026 14:14:39 Europe/Berlin] Authentication successful - User 12 is teacher
+[01-Jan-2026 14:14:45 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 14:14:45 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 14:14:45 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 14:14:45 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 14:14:45 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 14:16:06 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 14:16:06 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 14:16:06 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 14:16:06 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 14:16:06 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 14:19:33 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 14:19:33 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 14:19:33 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 14:19:33 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 14:19:33 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 14:19:36 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 14:19:36 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 14:19:36 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 14:19:36 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 14:19:36 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 14:19:41 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 14:19:41 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 14:19:41 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 14:19:41 Europe/Berlin] POST teacher_id: 12
+[01-Jan-2026 14:19:41 Europe/Berlin] teacher_id from POST: 12
+[01-Jan-2026 14:19:41 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 14:19:41 Europe/Berlin] Teacher ID 12 found in database
+[01-Jan-2026 14:19:41 Europe/Berlin] Authentication successful - User 12 is teacher
+[01-Jan-2026 14:20:18 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 14:20:18 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 14:20:18 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 14:20:18 Europe/Berlin] POST teacher_id: 12
+[01-Jan-2026 14:20:18 Europe/Berlin] teacher_id from POST: 12
+[01-Jan-2026 14:20:18 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 14:20:18 Europe/Berlin] Teacher ID 12 found in database
+[01-Jan-2026 14:20:18 Europe/Berlin] Authentication successful - User 12 is teacher
+[01-Jan-2026 14:20:45 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 14:20:45 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 14:20:45 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 14:20:45 Europe/Berlin] POST teacher_id: 1
+[01-Jan-2026 14:20:45 Europe/Berlin] teacher_id from POST: 1
+[01-Jan-2026 14:20:45 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 14:20:45 Europe/Berlin] Teacher ID 1 found in database
+[01-Jan-2026 14:20:45 Europe/Berlin] Authentication successful - User 1 is teacher
+[01-Jan-2026 14:20:58 Europe/Berlin] Courses API called - Action: create_course
+[01-Jan-2026 14:20:58 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 14:20:58 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 14:20:58 Europe/Berlin] POST teacher_id: 1
+[01-Jan-2026 14:20:58 Europe/Berlin] teacher_id from POST: 1
+[01-Jan-2026 14:20:58 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 14:20:58 Europe/Berlin] Teacher ID 1 found in database
+[01-Jan-2026 14:20:58 Europe/Berlin] Authentication successful - User 1 is teacher
+[01-Jan-2026 14:20:58 Europe/Berlin] createCourse called with userId: 1
+[01-Jan-2026 14:20:58 Europe/Berlin] Course data - Title: كورس اختبار #1767273658854, Subtitle: وصف فرعي, Price: 99, Color: #6c5ce7
+[01-Jan-2026 14:20:58 Europe/Berlin] Preparing SQL: INSERT INTO courses (title, subtitle, description, teacher_id, price, image_color, created_at) 
+              VALUES (?, ?, ?, ?, ?, ?, NOW())
+[01-Jan-2026 14:20:58 Europe/Berlin] Binding parameters: s, s, s, i, d, s
+[01-Jan-2026 14:20:58 Europe/Berlin] Exception in courses_api: Duplicate entry '' for key 'course_code'
+[01-Jan-2026 14:21:31 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 14:21:31 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 14:21:31 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 14:21:31 Europe/Berlin] POST teacher_id: 12
+[01-Jan-2026 14:21:31 Europe/Berlin] teacher_id from POST: 12
+[01-Jan-2026 14:21:31 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 14:21:31 Europe/Berlin] Teacher ID 12 found in database
+[01-Jan-2026 14:21:31 Europe/Berlin] Authentication successful - User 12 is teacher
+[01-Jan-2026 14:21:33 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 14:21:33 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 14:21:33 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 14:21:33 Europe/Berlin] POST teacher_id: 12
+[01-Jan-2026 14:21:33 Europe/Berlin] teacher_id from POST: 12
+[01-Jan-2026 14:21:33 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 14:21:33 Europe/Berlin] Teacher ID 12 found in database
+[01-Jan-2026 14:21:33 Europe/Berlin] Authentication successful - User 12 is teacher
+[01-Jan-2026 14:21:57 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 14:21:57 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 14:21:57 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 14:21:57 Europe/Berlin] POST teacher_id: 12
+[01-Jan-2026 14:21:57 Europe/Berlin] teacher_id from POST: 12
+[01-Jan-2026 14:21:57 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 14:21:57 Europe/Berlin] Teacher ID 12 found in database
+[01-Jan-2026 14:21:57 Europe/Berlin] Authentication successful - User 12 is teacher
+[01-Jan-2026 14:22:05 Europe/Berlin] Courses API called - Action: create_course
+[01-Jan-2026 14:22:05 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 14:22:05 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 14:22:05 Europe/Berlin] POST teacher_id: 12
+[01-Jan-2026 14:22:05 Europe/Berlin] teacher_id from POST: 12
+[01-Jan-2026 14:22:05 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 14:22:05 Europe/Berlin] Teacher ID 12 found in database
+[01-Jan-2026 14:22:05 Europe/Berlin] Authentication successful - User 12 is teacher
+[01-Jan-2026 14:22:05 Europe/Berlin] createCourse called with userId: 12
+[01-Jan-2026 14:22:05 Europe/Berlin] Course data - Title: hhhhhh, Subtitle: hhhhhhhh, Price: 25, Color: #6c5ce7
+[01-Jan-2026 14:22:05 Europe/Berlin] Generated course code: COURSE_1767273725_2139
+[01-Jan-2026 14:22:05 Europe/Berlin] Preparing SQL: INSERT INTO courses (course_code, title, subtitle, description, teacher_id, price, image_color, created_at) 
+              VALUES (?, ?, ?, ?, ?, ?, ?, NOW())
+[01-Jan-2026 14:22:05 Europe/Berlin] Binding parameters: s, s, s, s, i, d, s
+[01-Jan-2026 14:22:05 Europe/Berlin] Course created successfully with ID: 7
+[01-Jan-2026 14:22:05 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 14:22:05 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 14:22:05 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 14:22:05 Europe/Berlin] POST teacher_id: 12
+[01-Jan-2026 14:22:05 Europe/Berlin] teacher_id from POST: 12
+[01-Jan-2026 14:22:05 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 14:22:05 Europe/Berlin] Teacher ID 12 found in database
+[01-Jan-2026 14:22:05 Europe/Berlin] Authentication successful - User 12 is teacher
+[01-Jan-2026 14:22:14 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 14:22:14 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 14:22:14 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 14:22:14 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 14:22:14 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 14:22:48 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 14:22:48 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 14:22:48 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 14:22:48 Europe/Berlin] POST teacher_id: 1
+[01-Jan-2026 14:22:48 Europe/Berlin] teacher_id from POST: 1
+[01-Jan-2026 14:22:48 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 14:22:48 Europe/Berlin] Teacher ID 1 found in database
+[01-Jan-2026 14:22:48 Europe/Berlin] Authentication successful - User 1 is teacher
+[01-Jan-2026 14:23:24 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 14:23:24 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 14:23:24 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 14:23:24 Europe/Berlin] POST teacher_id: 1
+[01-Jan-2026 14:23:24 Europe/Berlin] teacher_id from POST: 1
+[01-Jan-2026 14:23:24 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 14:23:24 Europe/Berlin] Teacher ID 1 found in database
+[01-Jan-2026 14:23:24 Europe/Berlin] Authentication successful - User 1 is teacher
+[01-Jan-2026 14:23:38 Europe/Berlin] Courses API called - Action: create_course
+[01-Jan-2026 14:23:38 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 14:23:38 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 14:23:38 Europe/Berlin] POST teacher_id: 1
+[01-Jan-2026 14:23:38 Europe/Berlin] teacher_id from POST: 1
+[01-Jan-2026 14:23:38 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 14:23:38 Europe/Berlin] Teacher ID 1 found in database
+[01-Jan-2026 14:23:38 Europe/Berlin] Authentication successful - User 1 is teacher
+[01-Jan-2026 14:23:38 Europe/Berlin] createCourse called with userId: 1
+[01-Jan-2026 14:23:38 Europe/Berlin] Course data - Title: كورس اختبار #1767273818666, Subtitle: وصف فرعي, Price: 99, Color: #6c5ce7
+[01-Jan-2026 14:23:38 Europe/Berlin] Generated course code: COURSE_1767273818_7696
+[01-Jan-2026 14:23:38 Europe/Berlin] Preparing SQL: INSERT INTO courses (course_code, title, subtitle, description, teacher_id, price, image_color, created_at) 
+              VALUES (?, ?, ?, ?, ?, ?, ?, NOW())
+[01-Jan-2026 14:23:38 Europe/Berlin] Binding parameters: s, s, s, s, i, d, s
+[01-Jan-2026 14:23:38 Europe/Berlin] Course created successfully with ID: 8
+[01-Jan-2026 14:25:48 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 14:25:48 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 14:25:48 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 14:25:48 Europe/Berlin] POST teacher_id: 1
+[01-Jan-2026 14:25:48 Europe/Berlin] teacher_id from POST: 1
+[01-Jan-2026 14:25:48 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 14:25:48 Europe/Berlin] Teacher ID 1 found in database
+[01-Jan-2026 14:25:48 Europe/Berlin] Authentication successful - User 1 is teacher
+[01-Jan-2026 14:26:00 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 14:26:00 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 14:26:00 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 14:26:00 Europe/Berlin] POST teacher_id: 1
+[01-Jan-2026 14:26:00 Europe/Berlin] teacher_id from POST: 1
+[01-Jan-2026 14:26:00 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 14:26:00 Europe/Berlin] Teacher ID 1 found in database
+[01-Jan-2026 14:26:00 Europe/Berlin] Authentication successful - User 1 is teacher
+[01-Jan-2026 14:26:12 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 14:26:12 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 14:26:12 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 14:26:12 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 14:26:12 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 14:27:02 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 14:27:02 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 14:27:02 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 14:27:02 Europe/Berlin] POST teacher_id: 1
+[01-Jan-2026 14:27:02 Europe/Berlin] teacher_id from POST: 1
+[01-Jan-2026 14:27:02 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 14:27:02 Europe/Berlin] Teacher ID 1 found in database
+[01-Jan-2026 14:27:02 Europe/Berlin] Authentication successful - User 1 is teacher
+[01-Jan-2026 14:27:46 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 14:27:46 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 14:27:46 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 14:27:46 Europe/Berlin] POST teacher_id: 1
+[01-Jan-2026 14:27:46 Europe/Berlin] teacher_id from POST: 1
+[01-Jan-2026 14:27:46 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 14:27:46 Europe/Berlin] Teacher ID 1 found in database
+[01-Jan-2026 14:27:46 Europe/Berlin] Authentication successful - User 1 is teacher
+[01-Jan-2026 14:27:56 Europe/Berlin] Courses API called - Action: create_course
+[01-Jan-2026 14:27:56 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 14:27:56 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 14:27:56 Europe/Berlin] POST teacher_id: 1
+[01-Jan-2026 14:27:56 Europe/Berlin] teacher_id from POST: 1
+[01-Jan-2026 14:27:56 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 14:27:56 Europe/Berlin] Teacher ID 1 found in database
+[01-Jan-2026 14:27:56 Europe/Berlin] Authentication successful - User 1 is teacher
+[01-Jan-2026 14:27:56 Europe/Berlin] createCourse called with userId: 1
+[01-Jan-2026 14:27:56 Europe/Berlin] Course data - Title: hhhhhh, Subtitle: hhhhhhhh, Price: 25, Color: #6c5ce7
+[01-Jan-2026 14:27:56 Europe/Berlin] Generated course code: COURSE_1767274076_2572
+[01-Jan-2026 14:27:56 Europe/Berlin] Preparing SQL: INSERT INTO courses (course_code, title, subtitle, description, teacher_id, price, image_color, created_at) 
+              VALUES (?, ?, ?, ?, ?, ?, ?, NOW())
+[01-Jan-2026 14:27:56 Europe/Berlin] Binding parameters: s, s, s, s, i, d, s
+[01-Jan-2026 14:27:56 Europe/Berlin] Course created successfully with ID: 9
+[01-Jan-2026 14:27:56 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 14:27:56 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 14:27:56 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 14:27:56 Europe/Berlin] POST teacher_id: 1
+[01-Jan-2026 14:27:56 Europe/Berlin] teacher_id from POST: 1
+[01-Jan-2026 14:27:56 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 14:27:56 Europe/Berlin] Teacher ID 1 found in database
+[01-Jan-2026 14:27:56 Europe/Berlin] Authentication successful - User 1 is teacher
+[01-Jan-2026 14:28:11 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 14:28:11 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 14:28:11 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 14:28:11 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 14:28:11 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 14:30:58 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 14:30:58 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 14:30:58 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 14:30:58 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 14:30:58 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 14:31:45 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 14:31:45 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 14:31:45 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 14:31:45 Europe/Berlin] POST teacher_id: 1
+[01-Jan-2026 14:31:45 Europe/Berlin] teacher_id from POST: 1
+[01-Jan-2026 14:31:45 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 14:31:45 Europe/Berlin] Teacher ID 1 found in database
+[01-Jan-2026 14:31:45 Europe/Berlin] Authentication successful - User 1 is teacher
+[01-Jan-2026 14:32:02 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 14:32:02 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 14:32:02 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 14:32:02 Europe/Berlin] POST teacher_id: 12
+[01-Jan-2026 14:32:02 Europe/Berlin] teacher_id from POST: 12
+[01-Jan-2026 14:32:02 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 14:32:02 Europe/Berlin] Teacher ID 12 found in database
+[01-Jan-2026 14:32:02 Europe/Berlin] Authentication successful - User 12 is teacher
+[01-Jan-2026 14:32:04 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 14:32:04 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 14:32:04 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 14:32:04 Europe/Berlin] POST teacher_id: 12
+[01-Jan-2026 14:32:04 Europe/Berlin] teacher_id from POST: 12
+[01-Jan-2026 14:32:04 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 14:32:04 Europe/Berlin] Teacher ID 12 found in database
+[01-Jan-2026 14:32:04 Europe/Berlin] Authentication successful - User 12 is teacher
+[01-Jan-2026 14:32:34 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 14:32:34 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 14:32:34 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 14:32:34 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 14:32:34 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 15:05:05 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 15:05:05 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 15:05:05 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 15:05:05 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 15:05:05 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 15:14:09 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 15:14:09 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 15:14:09 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 15:14:09 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 15:14:09 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 15:16:53 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 15:16:53 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 15:16:53 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 15:16:53 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 15:16:53 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 15:17:28 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 15:17:28 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 15:17:28 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 15:17:28 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 15:17:28 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 15:17:28 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 15:17:28 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 15:17:28 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 15:17:29 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 15:17:29 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 15:17:29 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 15:17:29 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 15:17:29 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 15:17:29 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 15:17:29 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 15:17:29 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 15:26:56 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 15:26:56 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 15:26:56 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 15:26:56 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 15:26:56 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 15:30:07 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 15:30:07 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 15:30:07 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 15:30:07 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 15:30:07 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 15:30:07 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 15:30:07 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 15:30:07 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 15:30:18 Europe/Berlin] Courses API called - Action: create_course
+[01-Jan-2026 15:30:18 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 15:30:18 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 15:30:18 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 15:30:18 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 15:30:18 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 15:30:18 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 15:30:18 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 15:30:18 Europe/Berlin] createCourse called with userId: 11
+[01-Jan-2026 15:30:18 Europe/Berlin] Course data - Title: HHHHH, Subtitle: HHHH, Price: 25, Color: #dc6767
+[01-Jan-2026 15:30:18 Europe/Berlin] Generated course code: COURSE_1767277818_1078
+[01-Jan-2026 15:30:18 Europe/Berlin] Preparing SQL: INSERT INTO courses (course_code, title, subtitle, description, teacher_id, price, image_color, created_at) 
+              VALUES (?, ?, ?, ?, ?, ?, ?, NOW())
+[01-Jan-2026 15:30:18 Europe/Berlin] Binding parameters: s, s, s, s, i, d, s
+[01-Jan-2026 15:30:18 Europe/Berlin] Course created successfully with ID: 16
+[01-Jan-2026 15:30:19 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 15:30:19 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 15:30:19 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 15:30:19 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 15:30:19 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 15:30:19 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 15:30:19 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 15:30:19 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 15:31:11 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 15:31:11 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 15:31:11 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 15:31:11 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 15:31:11 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 15:31:11 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 15:31:11 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 15:31:11 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 15:31:21 Europe/Berlin] Courses API called - Action: create_course
+[01-Jan-2026 15:31:21 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 15:31:21 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 15:31:21 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 15:31:21 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 15:31:21 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 15:31:21 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 15:31:21 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 15:31:21 Europe/Berlin] createCourse called with userId: 11
+[01-Jan-2026 15:31:21 Europe/Berlin] Course data - Title: HHHH, Subtitle: HHHH, Price: 25, Color: #6c5ce7
+[01-Jan-2026 15:31:21 Europe/Berlin] Generated course code: COURSE_1767277881_5784
+[01-Jan-2026 15:31:21 Europe/Berlin] Preparing SQL: INSERT INTO courses (course_code, title, subtitle, description, teacher_id, price, image_color, created_at) 
+              VALUES (?, ?, ?, ?, ?, ?, ?, NOW())
+[01-Jan-2026 15:31:21 Europe/Berlin] Binding parameters: s, s, s, s, i, d, s
+[01-Jan-2026 15:31:21 Europe/Berlin] Course created successfully with ID: 23
+[01-Jan-2026 15:31:21 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 15:31:21 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 15:31:21 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 15:31:21 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 15:31:21 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 15:31:21 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 15:31:21 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 15:31:21 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 15:31:24 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 15:31:24 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 15:31:24 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 15:31:24 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 15:31:24 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 15:31:24 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 15:31:24 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 15:31:24 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 15:31:26 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 15:31:26 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 15:31:26 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 15:31:26 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 15:31:26 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 15:31:26 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 15:31:26 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 15:31:26 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 15:31:28 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 15:31:28 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 15:31:28 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 15:31:28 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 15:31:28 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 15:31:28 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 15:31:28 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 15:31:28 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 15:31:29 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 15:31:29 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 15:31:29 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 15:31:29 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 15:31:29 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 15:31:29 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 15:31:29 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 15:31:29 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 15:31:34 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 15:31:34 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 15:31:34 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 15:31:34 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 15:31:34 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 15:32:20 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 15:32:20 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 15:32:20 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 15:32:20 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 15:32:20 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 15:33:11 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 15:33:11 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 15:33:12 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 15:33:12 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 15:33:12 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 15:33:22 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 15:33:22 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 15:33:22 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 15:33:22 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 15:33:22 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 15:33:22 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 15:33:22 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 15:33:22 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 15:33:24 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 15:33:24 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 15:33:24 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 15:33:24 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 15:33:24 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 15:33:24 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 15:33:24 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 15:33:24 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 15:34:00 Europe/Berlin] Courses API called - Action: create_course
+[01-Jan-2026 15:34:00 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 15:34:00 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 15:34:00 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 15:34:00 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 15:34:00 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 15:34:00 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 15:34:00 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 15:34:00 Europe/Berlin] createCourse called with userId: 11
+[01-Jan-2026 15:34:00 Europe/Berlin] Course data - Title: TEST, Subtitle: TEST, Price: 50, Color: #e06363
+[01-Jan-2026 15:34:00 Europe/Berlin] Generated course code: COURSE_1767278040_3699
+[01-Jan-2026 15:34:00 Europe/Berlin] Preparing SQL: INSERT INTO courses (course_code, title, subtitle, description, teacher_id, price, image_color, created_at) 
+              VALUES (?, ?, ?, ?, ?, ?, ?, NOW())
+[01-Jan-2026 15:34:00 Europe/Berlin] Binding parameters: s, s, s, s, i, d, s
+[01-Jan-2026 15:34:00 Europe/Berlin] Course created successfully with ID: 24
+[01-Jan-2026 15:34:00 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 15:34:00 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 15:34:00 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 15:34:00 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 15:34:00 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 15:34:00 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 15:34:00 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 15:34:00 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 15:34:04 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 15:34:04 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 15:34:04 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 15:34:04 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 15:34:04 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 15:34:11 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 15:34:11 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 15:34:11 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 15:34:11 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 15:34:11 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 15:34:11 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 15:34:11 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 15:34:11 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 15:34:13 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 15:34:13 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 15:34:13 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 15:34:13 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 15:34:13 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 15:34:13 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 15:34:13 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 15:34:13 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 15:34:14 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 15:34:14 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 15:34:14 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 15:34:14 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 15:34:14 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 15:34:14 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 15:34:14 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 15:34:14 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 15:34:17 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 15:34:17 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 15:34:17 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 15:34:17 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 15:34:17 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 15:34:17 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 15:34:17 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 15:34:17 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 15:37:22 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 15:37:22 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 15:37:22 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 15:37:22 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 15:37:22 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 15:37:22 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 15:37:22 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 15:37:22 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 15:37:24 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 15:37:24 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 15:37:24 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 15:37:24 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 15:37:24 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 15:37:47 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 15:37:47 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 15:37:47 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 15:37:47 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 15:37:47 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 15:37:47 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 15:37:47 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 15:37:47 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 15:38:07 Europe/Berlin] Courses API called - Action: create_course
+[01-Jan-2026 15:38:07 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 15:38:07 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 15:38:07 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 15:38:07 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 15:38:07 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 15:38:07 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 15:38:07 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 15:38:07 Europe/Berlin] createCourse called with userId: 11
+[01-Jan-2026 15:38:07 Europe/Berlin] Course data - Title: test, Subtitle: test, Price: 50, Color: #ff4444
+[01-Jan-2026 15:38:07 Europe/Berlin] Generated course code: COURSE_1767278287_1765
+[01-Jan-2026 15:38:07 Europe/Berlin] Preparing SQL: INSERT INTO courses (course_code, title, subtitle, description, teacher_id, price, image_color, created_at) 
+              VALUES (?, ?, ?, ?, ?, ?, ?, NOW())
+[01-Jan-2026 15:38:07 Europe/Berlin] Binding parameters: s, s, s, s, i, d, s
+[01-Jan-2026 15:38:07 Europe/Berlin] Course created successfully with ID: 25
+[01-Jan-2026 15:38:07 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 15:38:07 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 15:38:07 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 15:38:07 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 15:38:07 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 15:38:07 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 15:38:07 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 15:38:07 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 15:38:16 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 15:38:16 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 15:38:16 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 15:38:16 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 15:38:16 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 15:38:16 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 15:38:16 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 15:38:16 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 15:38:17 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 15:38:17 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 15:38:17 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 15:38:17 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 15:38:17 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 15:38:17 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 15:38:17 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 15:38:17 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 15:38:19 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 15:38:19 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 15:38:19 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 15:38:19 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 15:38:19 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 15:38:19 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 15:38:19 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 15:38:19 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 15:38:22 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 15:38:22 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 15:38:22 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 15:38:22 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 15:38:22 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 15:46:43 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 15:46:43 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 15:46:43 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 15:46:43 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 15:46:43 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 15:47:01 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 15:47:01 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 15:47:01 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 15:47:01 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 15:47:01 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 15:47:01 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 15:47:01 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 15:47:01 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 15:47:02 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 15:47:02 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 15:47:02 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 15:47:02 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 15:47:02 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 15:47:02 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 15:47:02 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 15:47:02 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 15:54:27 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 15:54:27 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 15:54:27 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 15:54:27 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 15:54:27 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 15:54:27 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 15:54:27 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 15:54:27 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 15:54:30 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 15:54:30 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 15:54:30 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 15:54:30 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 15:54:30 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 15:54:30 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 15:54:30 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 15:54:30 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 15:54:33 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 15:54:33 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 15:54:33 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 15:54:33 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 15:54:33 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 15:54:49 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 15:54:49 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 15:54:49 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 15:54:49 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 15:54:49 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 15:55:02 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 15:55:02 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 15:55:02 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 15:55:02 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 15:55:02 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 16:11:39 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 16:11:39 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 16:11:39 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 16:11:39 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 16:11:39 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 16:11:39 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 16:11:39 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 16:11:39 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 16:12:06 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 16:12:06 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 16:12:06 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 16:12:06 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 16:12:06 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 16:12:27 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 16:12:27 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 16:12:27 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 16:12:27 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 16:12:27 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 16:12:38 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 16:12:38 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 16:12:38 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 16:12:38 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 16:12:38 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 17:09:49 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 17:09:49 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 17:09:49 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 17:09:49 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 17:09:49 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 17:15:00 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 17:15:00 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 17:15:00 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 17:15:00 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 17:15:00 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 17:15:43 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 17:15:43 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 17:15:43 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 17:15:43 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 17:15:43 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 17:15:58 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 17:15:58 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 17:15:58 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 17:15:58 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 17:15:58 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 17:16:00 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 17:16:00 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 17:16:00 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 17:16:00 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 17:16:00 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 17:16:03 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 17:16:03 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 17:16:03 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 17:16:03 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 17:16:03 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 17:16:10 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 17:16:10 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 17:16:10 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 17:16:10 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 17:16:10 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 17:16:19 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 17:16:19 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 17:16:19 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 17:16:19 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 17:16:19 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 17:16:19 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 17:16:19 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 17:16:19 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 17:16:21 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 17:16:21 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 17:16:21 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 17:16:21 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 17:16:21 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 17:16:21 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 17:16:21 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 17:16:21 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 17:24:58 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 17:24:58 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 17:24:58 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 17:24:58 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 17:24:58 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 17:24:58 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 17:24:58 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 17:24:58 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 17:25:00 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 17:25:00 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 17:25:00 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 17:25:00 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 17:25:00 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 17:25:00 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 17:25:00 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 17:25:00 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 17:25:06 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 17:25:06 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 17:25:06 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 17:25:06 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 17:25:06 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 17:25:06 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 17:25:06 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 17:25:06 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 17:25:07 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 17:25:07 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 17:25:07 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 17:25:07 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 17:25:07 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 17:25:07 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 17:25:07 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 17:25:07 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 17:27:17 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 17:27:17 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 17:27:17 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 17:27:17 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 17:27:17 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 17:27:21 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 17:27:21 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 17:27:21 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 17:27:21 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 17:27:21 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 17:27:21 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 17:27:21 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 17:27:21 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 17:27:22 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 17:27:22 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 17:27:22 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 17:27:22 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 17:27:22 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 17:27:22 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 17:27:22 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 17:27:22 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 17:27:26 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 17:27:26 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 17:27:26 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 17:27:26 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 17:27:26 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 17:27:26 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 17:27:26 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 17:27:26 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 17:27:27 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 17:27:27 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 17:27:27 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 17:27:27 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 17:27:27 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 17:27:27 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 17:27:27 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 17:27:27 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 17:34:58 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 17:34:58 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 17:34:58 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 17:34:58 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 17:34:58 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 17:34:58 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 17:34:58 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 17:34:58 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 17:35:01 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 17:35:01 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 17:35:01 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 17:35:01 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 17:35:01 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 17:35:01 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 17:35:01 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 17:35:01 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 17:36:56 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 17:36:56 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 17:36:56 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 17:36:56 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 17:36:56 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 17:36:56 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 17:36:56 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 17:36:56 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 17:36:58 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 17:36:58 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 17:36:58 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 17:36:58 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 17:36:58 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 17:36:58 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 17:36:58 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 17:36:58 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 17:42:35 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 17:42:35 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 17:42:35 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 17:42:35 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 17:42:35 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 17:42:35 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 17:42:35 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 17:42:35 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 17:42:37 Europe/Berlin] Courses API called - Action: delete_course
+[01-Jan-2026 17:42:37 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 17:42:37 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 17:42:37 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 17:42:37 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 17:42:37 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 17:42:37 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 17:42:37 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 17:42:38 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 17:42:38 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 17:42:38 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 17:42:38 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 17:42:38 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 17:42:38 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 17:42:38 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 17:42:38 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 17:43:13 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 17:43:13 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 17:43:13 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 17:43:13 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 17:43:13 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 17:43:25 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 17:43:25 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 17:43:25 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 17:43:25 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 17:43:25 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 17:43:25 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 17:43:25 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 17:43:25 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 17:43:26 Europe/Berlin] Courses API called - Action: get_course_by_id
+[01-Jan-2026 17:43:26 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 17:43:26 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 17:43:26 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 17:43:26 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 17:43:26 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 17:43:26 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 17:43:26 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 17:43:37 Europe/Berlin] Courses API called - Action: update_course
+[01-Jan-2026 17:43:37 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 17:43:37 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 17:43:37 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 17:43:37 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 17:43:37 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 17:43:37 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 17:43:37 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 17:43:37 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 17:43:37 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 17:43:37 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 17:43:37 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 17:43:37 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 17:43:37 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 17:43:37 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 17:43:37 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 17:43:42 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 17:43:42 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 17:43:42 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 17:43:42 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 17:43:42 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 17:43:42 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 17:43:42 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 17:43:42 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 17:43:45 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 17:43:45 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 17:43:45 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 17:43:45 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 17:43:45 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 18:02:32 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 18:02:32 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 18:02:32 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 18:02:32 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 18:02:32 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 18:02:32 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 18:02:32 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 18:02:32 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 18:03:06 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 18:03:06 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 18:03:06 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 18:03:06 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 18:03:06 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 18:03:06 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 18:03:06 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 18:03:06 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 18:54:31 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 18:54:31 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 18:54:31 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 18:54:31 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 18:54:31 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 18:54:31 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 18:54:31 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 18:54:31 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 18:55:44 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 18:55:44 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 18:55:44 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 18:55:44 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 18:55:44 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 18:55:56 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 18:55:56 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 18:55:56 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 18:55:56 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 18:55:56 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 18:59:34 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 18:59:34 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 18:59:34 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 18:59:34 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 18:59:34 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 19:00:59 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 19:00:59 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 19:00:59 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 19:00:59 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 19:00:59 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 19:01:51 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 19:01:51 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 19:01:51 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 19:01:51 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 19:01:51 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 19:01:51 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 19:01:51 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 19:01:51 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 19:02:15 Europe/Berlin] Courses API called - Action: create_course
+[01-Jan-2026 19:02:15 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 19:02:15 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 19:02:15 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 19:02:15 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 19:02:15 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 19:02:15 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 19:02:15 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 19:02:15 Europe/Berlin] createCourse called with userId: 11
+[01-Jan-2026 19:02:15 Europe/Berlin] Course data - Title: so so, Subtitle: yes, Price: 25, Color: #6c5ce7
+[01-Jan-2026 19:02:15 Europe/Berlin] Generated course code: COURSE_1767290535_5267
+[01-Jan-2026 19:02:15 Europe/Berlin] Preparing SQL: INSERT INTO courses (course_code, title, subtitle, description, teacher_id, price, image_color, created_at) 
+              VALUES (?, ?, ?, ?, ?, ?, ?, NOW())
+[01-Jan-2026 19:02:15 Europe/Berlin] Binding parameters: s, s, s, s, i, d, s
+[01-Jan-2026 19:02:15 Europe/Berlin] Course created successfully with ID: 26
+[01-Jan-2026 19:02:15 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 19:02:15 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 19:02:15 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 19:02:15 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 19:02:15 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 19:02:15 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 19:02:15 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 19:02:15 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 19:02:20 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 19:02:20 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 19:02:20 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 19:02:20 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 19:02:20 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 19:02:20 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 19:02:20 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 19:02:20 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 19:02:27 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 19:02:27 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 19:02:27 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 19:02:27 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 19:02:27 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 19:02:38 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 19:02:38 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 19:02:38 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 19:02:38 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 19:02:38 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 19:04:24 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 19:04:24 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 19:04:24 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 19:04:24 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 19:04:24 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 19:07:11 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 19:07:11 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 19:07:11 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 19:07:11 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 19:07:11 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 19:07:14 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 19:07:14 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 19:07:14 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 19:07:14 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 19:07:14 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 19:07:14 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 19:07:14 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 19:07:14 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 19:07:43 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 19:07:43 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 19:07:43 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 19:07:43 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 19:07:43 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 19:14:47 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 19:14:47 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 19:14:47 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 19:14:47 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 19:14:47 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 19:14:54 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 19:14:54 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 19:14:54 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 19:14:54 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 19:14:54 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 19:15:01 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 19:15:01 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 19:15:01 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 19:15:01 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 19:15:01 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 19:15:03 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 19:15:03 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 19:15:03 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 19:15:03 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 19:15:03 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 19:15:03 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 19:15:03 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 19:15:03 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 19:15:23 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 19:15:23 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 19:15:23 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 19:15:23 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 19:15:23 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 19:15:23 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 19:15:23 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 19:15:23 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 19:15:26 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 19:15:26 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 19:15:26 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 19:15:26 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 19:15:26 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 19:22:23 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 19:22:23 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 19:22:23 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 19:22:23 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 19:22:23 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 19:22:23 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 19:22:23 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 19:22:23 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 19:22:38 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 19:22:38 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 19:22:38 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 19:22:38 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 19:22:38 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 19:22:38 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 19:22:38 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 19:22:38 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 19:22:58 Europe/Berlin] Courses API called - Action: delete_course
+[01-Jan-2026 19:22:58 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 19:22:58 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 19:22:58 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 19:22:58 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 19:22:58 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 19:22:58 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 19:22:58 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 19:22:58 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 19:22:58 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 19:22:58 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 19:22:58 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 19:22:58 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 19:22:58 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 19:22:58 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 19:22:58 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 19:23:01 Europe/Berlin] Courses API called - Action: delete_course
+[01-Jan-2026 19:23:01 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 19:23:01 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 19:23:01 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 19:23:01 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 19:23:01 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 19:23:01 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 19:23:01 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 19:23:02 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 19:23:02 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 19:23:02 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 19:23:02 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 19:23:02 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 19:23:02 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 19:23:02 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 19:23:02 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 19:23:29 Europe/Berlin] Courses API called - Action: create_course
+[01-Jan-2026 19:23:29 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 19:23:29 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 19:23:29 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 19:23:29 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 19:23:29 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 19:23:29 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 19:23:29 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 19:23:29 Europe/Berlin] createCourse called with userId: 11
+[01-Jan-2026 19:23:29 Europe/Berlin] Course data - Title: test course, Subtitle: this is about da7i7, Price: 25, Color: #6c5ce7
+[01-Jan-2026 19:23:29 Europe/Berlin] Wallpaper uploaded successfully to: uploads/wallpapers/wallpaper_6956bba142154.png
+[01-Jan-2026 19:23:29 Europe/Berlin] Generated course code: COURSE_1767291809_7358
+[01-Jan-2026 19:23:29 Europe/Berlin] Preparing SQL: INSERT INTO courses (title, subtitle, description, teacher_id, price, image_color, wallpaper, created_at) 
+              VALUES (?, ?, ?, ?, ?, ?, ?, NOW())
+[01-Jan-2026 19:23:29 Europe/Berlin] Binding parameters: s, s, s, i, d, s, s
+[01-Jan-2026 19:23:29 Europe/Berlin] Course created successfully with ID: 27, Wallpaper: uploads/wallpapers/wallpaper_6956bba142154.png
+[01-Jan-2026 19:23:29 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 19:23:29 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 19:23:29 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 19:23:29 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 19:23:29 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 19:23:29 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 19:23:29 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 19:23:29 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 19:24:08 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 19:24:08 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 19:24:08 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 19:24:08 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 19:24:08 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 19:24:08 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 19:24:08 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 19:24:08 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 19:24:13 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 19:24:13 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 19:24:13 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 19:24:13 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 19:24:13 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 19:24:28 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 19:24:28 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 19:24:28 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 19:24:28 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 19:24:28 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 19:33:30 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 19:33:30 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 19:33:30 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 19:33:30 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 19:33:30 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 19:33:30 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 19:33:30 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 19:33:30 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 19:33:36 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 19:33:36 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 19:33:36 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 19:33:36 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 19:33:36 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 19:33:36 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 19:33:36 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 19:33:36 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 19:33:41 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 19:33:41 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 19:33:41 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 19:33:41 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 19:33:41 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 19:33:41 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 19:33:41 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 19:33:41 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 19:33:41 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 19:33:41 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 19:33:46 Europe/Berlin] Courses API called - Action: delete_course
+[01-Jan-2026 19:33:46 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 19:33:46 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 19:33:46 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 19:33:46 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 19:33:46 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 19:33:46 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 19:33:46 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 19:33:47 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 19:33:47 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 19:33:47 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 19:33:47 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 19:33:47 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 19:33:47 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 19:33:47 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 19:33:47 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 19:34:20 Europe/Berlin] Courses API called - Action: create_course
+[01-Jan-2026 19:34:20 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 19:34:20 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 19:34:20 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 19:34:20 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 19:34:20 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 19:34:20 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 19:34:20 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 19:34:20 Europe/Berlin] createCourse called with userId: 11
+[01-Jan-2026 19:34:20 Europe/Berlin] Course data - Title: daaaaah, Subtitle: do it, Price: 50, Color: #6c5ce7
+[01-Jan-2026 19:34:20 Europe/Berlin] Wallpaper uploaded successfully to: uploads/wallpapers/wallpaper_6956be2cdbfbb.png
+[01-Jan-2026 19:34:20 Europe/Berlin] Generated course code: COURSE_1767292460_9959
+[01-Jan-2026 19:34:20 Europe/Berlin] Preparing SQL: INSERT INTO courses (title, subtitle, description, teacher_id, price, image_color, wallpaper, created_at) 
+              VALUES (?, ?, ?, ?, ?, ?, ?, NOW())
+[01-Jan-2026 19:34:20 Europe/Berlin] Binding parameters: s, s, s, i, d, s, s
+[01-Jan-2026 19:34:20 Europe/Berlin] Course created successfully with ID: 28, Wallpaper: uploads/wallpapers/wallpaper_6956be2cdbfbb.png
+[01-Jan-2026 19:34:21 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 19:34:21 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 19:34:21 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 19:34:21 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 19:34:21 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 19:34:21 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 19:34:21 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 19:34:21 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 19:43:16 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 19:43:16 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 19:43:16 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 19:43:16 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 19:43:16 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 19:43:16 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 19:43:16 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 19:43:16 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 19:43:21 Europe/Berlin] Courses API called - Action: delete_course
+[01-Jan-2026 19:43:21 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 19:43:21 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 19:43:21 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 19:43:21 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 19:43:21 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 19:43:21 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 19:43:21 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 19:43:21 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 19:43:21 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 19:43:21 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 19:43:21 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 19:43:21 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 19:43:21 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 19:43:21 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 19:43:21 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 19:43:36 Europe/Berlin] Courses API called - Action: create_course
+[01-Jan-2026 19:43:36 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 19:43:36 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 19:43:36 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 19:43:36 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 19:43:36 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 19:43:36 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 19:43:36 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 19:43:36 Europe/Berlin] createCourse called with userId: 11
+[01-Jan-2026 19:43:36 Europe/Berlin] Course data - Title: test, Subtitle: test, Price: 50, Color: #6c5ce7
+[01-Jan-2026 19:43:36 Europe/Berlin] Wallpaper uploaded successfully to: uploads/wallpapers/wallpaper_6956c0589c16c.png
+[01-Jan-2026 19:43:36 Europe/Berlin] Generated course code: COURSE_1767293016_1983
+[01-Jan-2026 19:43:36 Europe/Berlin] Preparing SQL: INSERT INTO courses (course_code, title, subtitle, description, teacher_id, price, image_color, wallpaper, created_at) 
+              VALUES (?, ?, ?, ?, ?, ?, ?, ?, NOW())
+[01-Jan-2026 19:43:36 Europe/Berlin] Binding parameters: s(code), s, s, s, i, d, s, s
+[01-Jan-2026 19:43:36 Europe/Berlin] Course created successfully with ID: 29, Wallpaper: uploads/wallpapers/wallpaper_6956c0589c16c.png
+[01-Jan-2026 19:43:36 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 19:43:36 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 19:43:36 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 19:43:36 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 19:43:36 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 19:43:36 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 19:43:36 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 19:43:36 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 19:43:42 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 19:43:42 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 19:43:42 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 19:43:42 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 19:43:42 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 19:43:53 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 19:43:53 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 19:43:53 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 19:43:53 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 19:43:53 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 19:45:05 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 19:45:05 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 19:45:05 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 19:45:05 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 19:45:05 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 19:49:38 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 19:49:38 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 19:49:38 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 19:49:38 Europe/Berlin] POST teacher_id: 1
+[01-Jan-2026 19:49:38 Europe/Berlin] teacher_id from POST: 1
+[01-Jan-2026 19:49:38 Europe/Berlin] Teacher check query result rows: 0
+[01-Jan-2026 19:49:38 Europe/Berlin] Teacher ID 1 NOT found in database - treating as teacher anyway for testing
+[01-Jan-2026 19:49:38 Europe/Berlin] Authentication successful - User 1 is teacher
+[01-Jan-2026 19:51:50 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 19:51:50 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 19:51:50 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 19:51:50 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 19:51:50 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 19:52:24 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 19:52:24 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 19:52:24 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 19:52:24 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 19:52:24 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 19:52:24 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 19:52:24 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 19:52:24 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 22:04:08 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 22:04:08 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 22:04:08 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 22:04:08 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 22:04:08 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 22:04:08 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 22:04:08 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 22:04:08 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 22:11:47 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 22:11:47 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 22:11:47 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 22:11:47 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 22:11:47 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 22:12:01 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 22:12:01 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 22:12:01 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 22:12:01 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 22:12:01 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 22:12:45 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 22:12:45 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 22:12:45 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 22:12:45 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 22:12:45 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 22:12:47 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 22:12:47 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 22:12:47 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 22:12:47 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 22:12:47 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 22:14:58 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 22:14:58 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 22:14:58 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 22:14:58 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 22:14:58 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 22:15:09 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 22:15:09 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 22:15:09 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 22:15:09 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 22:15:09 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 22:33:28 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 22:33:28 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 22:33:28 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 22:33:28 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 22:33:28 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 22:35:44 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 22:35:44 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 22:35:44 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 22:35:44 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 22:35:44 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 22:36:57 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 22:36:57 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 22:36:57 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 22:36:57 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 22:36:57 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 22:37:20 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 22:37:20 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 22:37:20 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 22:37:20 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 22:37:20 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 22:37:33 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 22:37:33 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 22:37:33 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 22:37:33 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 22:37:33 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 22:38:21 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 22:38:21 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 22:38:21 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 22:38:21 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 22:38:21 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 22:39:47 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 22:39:47 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 22:39:47 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 22:39:47 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 22:39:47 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 22:44:35 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 22:44:35 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 22:44:35 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 22:44:35 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 22:44:35 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 22:46:17 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 22:46:17 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 22:46:17 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 22:46:17 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 22:46:17 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 22:46:17 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 22:46:17 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 22:46:17 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 22:46:47 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 22:46:47 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 22:46:47 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 22:46:47 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 22:46:47 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 22:46:47 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 22:46:47 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 22:46:47 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 22:47:34 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 22:47:34 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 22:47:34 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 22:47:34 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 22:47:34 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 22:47:34 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 22:47:34 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 22:47:34 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 22:47:37 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 22:47:37 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 22:47:37 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 22:47:37 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 22:47:37 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 22:57:49 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 22:57:49 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 22:57:49 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 22:57:49 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 22:57:49 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 22:57:49 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 22:57:49 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 22:57:49 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 22:57:51 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 22:57:51 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 22:57:51 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 22:57:51 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 22:57:51 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 22:57:51 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 22:57:51 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 22:57:51 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 22:57:52 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 22:57:52 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 22:57:52 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 22:57:52 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 22:57:52 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 22:57:52 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 22:57:52 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 22:57:52 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 22:57:55 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 22:57:55 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 22:57:55 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 22:57:55 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 22:57:55 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 22:57:55 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 22:57:55 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 22:57:55 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 22:57:55 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 22:57:55 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 22:57:55 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 22:57:55 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 22:57:55 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 22:57:55 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 22:57:55 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 22:57:55 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 22:58:04 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 22:58:04 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 22:58:04 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 22:58:04 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 22:58:04 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 22:58:04 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 22:58:04 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 22:58:04 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 23:00:25 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 23:00:25 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 23:00:25 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 23:00:25 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 23:00:25 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 23:00:25 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 23:00:25 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 23:00:25 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 23:02:10 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 23:02:10 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 23:02:10 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 23:02:10 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 23:02:10 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 23:02:10 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 23:02:10 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 23:02:10 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 23:02:12 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 23:02:12 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 23:02:12 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 23:02:12 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 23:02:12 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 23:02:12 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 23:02:12 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 23:02:12 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 23:02:14 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 23:02:14 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 23:02:14 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 23:02:14 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 23:02:14 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 23:02:14 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 23:02:14 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 23:02:14 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 23:02:54 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 23:02:54 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 23:02:54 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 23:02:54 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 23:02:54 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 23:02:54 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 23:02:54 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 23:02:54 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 23:07:22 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 23:07:22 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 23:07:22 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 23:07:22 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 23:07:22 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 23:07:22 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 23:07:22 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 23:07:22 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 23:13:47 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 23:13:47 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 23:13:47 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 23:13:47 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 23:13:47 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 23:13:47 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 23:13:47 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 23:13:47 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 23:32:01 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 23:32:01 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 23:32:01 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 23:32:01 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 23:32:01 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 23:32:01 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 23:32:01 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 23:32:01 Europe/Berlin] Authentication successful - User 11 is teacher
+[01-Jan-2026 23:44:01 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 23:44:01 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 23:44:01 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 23:44:01 Europe/Berlin] POST teacher_id: not set
+[01-Jan-2026 23:44:01 Europe/Berlin] No user_id found - unauthorized
+[01-Jan-2026 23:57:01 Europe/Berlin] Courses API called - Action: get_courses
+[01-Jan-2026 23:57:01 Europe/Berlin] Session user_id: not set
+[01-Jan-2026 23:57:01 Europe/Berlin] Session user_role: not set
+[01-Jan-2026 23:57:01 Europe/Berlin] POST teacher_id: 11
+[01-Jan-2026 23:57:01 Europe/Berlin] teacher_id from POST: 11
+[01-Jan-2026 23:57:01 Europe/Berlin] Teacher check query result rows: 1
+[01-Jan-2026 23:57:01 Europe/Berlin] Teacher ID 11 found in database
+[01-Jan-2026 23:57:01 Europe/Berlin] Authentication successful - User 11 is teacher
+[02-Jan-2026 15:32:40 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 15:32:40 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 15:32:40 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 15:32:40 Europe/Berlin] POST teacher_id: 11
+[02-Jan-2026 15:32:40 Europe/Berlin] teacher_id from POST: 11
+[02-Jan-2026 15:32:40 Europe/Berlin] Teacher check query result rows: 1
+[02-Jan-2026 15:32:40 Europe/Berlin] Teacher ID 11 found in database
+[02-Jan-2026 15:32:40 Europe/Berlin] Authentication successful - User 11 is teacher
+[02-Jan-2026 15:38:50 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 15:38:50 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 15:38:50 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 15:38:50 Europe/Berlin] POST teacher_id: 11
+[02-Jan-2026 15:38:50 Europe/Berlin] teacher_id from POST: 11
+[02-Jan-2026 15:38:50 Europe/Berlin] Teacher check query result rows: 1
+[02-Jan-2026 15:38:50 Europe/Berlin] Teacher ID 11 found in database
+[02-Jan-2026 15:38:50 Europe/Berlin] Authentication successful - User 11 is teacher
+[02-Jan-2026 15:40:36 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 15:40:36 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 15:40:36 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 15:40:36 Europe/Berlin] POST teacher_id: 11
+[02-Jan-2026 15:40:36 Europe/Berlin] teacher_id from POST: 11
+[02-Jan-2026 15:40:36 Europe/Berlin] Teacher check query result rows: 1
+[02-Jan-2026 15:40:36 Europe/Berlin] Teacher ID 11 found in database
+[02-Jan-2026 15:40:36 Europe/Berlin] Authentication successful - User 11 is teacher
+[02-Jan-2026 15:42:42 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 15:42:42 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 15:42:42 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 15:42:42 Europe/Berlin] POST teacher_id: 11
+[02-Jan-2026 15:42:42 Europe/Berlin] teacher_id from POST: 11
+[02-Jan-2026 15:42:42 Europe/Berlin] Teacher check query result rows: 1
+[02-Jan-2026 15:42:42 Europe/Berlin] Teacher ID 11 found in database
+[02-Jan-2026 15:42:42 Europe/Berlin] Authentication successful - User 11 is teacher
+[02-Jan-2026 15:43:13 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 15:43:13 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 15:43:13 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 15:43:13 Europe/Berlin] POST teacher_id: 11
+[02-Jan-2026 15:43:13 Europe/Berlin] teacher_id from POST: 11
+[02-Jan-2026 15:43:13 Europe/Berlin] Teacher check query result rows: 1
+[02-Jan-2026 15:43:13 Europe/Berlin] Teacher ID 11 found in database
+[02-Jan-2026 15:43:13 Europe/Berlin] Authentication successful - User 11 is teacher
+[02-Jan-2026 15:43:54 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 15:43:54 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 15:43:54 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 15:43:54 Europe/Berlin] POST teacher_id: 11
+[02-Jan-2026 15:43:54 Europe/Berlin] teacher_id from POST: 11
+[02-Jan-2026 15:43:54 Europe/Berlin] Teacher check query result rows: 1
+[02-Jan-2026 15:43:54 Europe/Berlin] Teacher ID 11 found in database
+[02-Jan-2026 15:43:54 Europe/Berlin] Authentication successful - User 11 is teacher
+[02-Jan-2026 15:46:19 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 15:46:19 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 15:46:19 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 15:46:19 Europe/Berlin] POST teacher_id: 11
+[02-Jan-2026 15:46:19 Europe/Berlin] teacher_id from POST: 11
+[02-Jan-2026 15:46:19 Europe/Berlin] Teacher check query result rows: 1
+[02-Jan-2026 15:46:19 Europe/Berlin] Teacher ID 11 found in database
+[02-Jan-2026 15:46:19 Europe/Berlin] Authentication successful - User 11 is teacher
+[02-Jan-2026 15:46:57 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 15:46:57 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 15:46:57 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 15:46:57 Europe/Berlin] POST teacher_id: not set
+[02-Jan-2026 15:46:57 Europe/Berlin] No user_id found - unauthorized
+[02-Jan-2026 16:00:50 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 16:00:50 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 16:00:50 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 16:00:50 Europe/Berlin] POST teacher_id: 11
+[02-Jan-2026 16:00:50 Europe/Berlin] teacher_id from POST: 11
+[02-Jan-2026 16:00:50 Europe/Berlin] Teacher check query result rows: 1
+[02-Jan-2026 16:00:50 Europe/Berlin] Teacher ID 11 found in database
+[02-Jan-2026 16:00:50 Europe/Berlin] Authentication successful - User 11 is teacher
+[02-Jan-2026 16:01:15 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 16:01:15 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 16:01:15 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 16:01:15 Europe/Berlin] POST teacher_id: 11
+[02-Jan-2026 16:01:15 Europe/Berlin] teacher_id from POST: 11
+[02-Jan-2026 16:01:15 Europe/Berlin] Teacher check query result rows: 1
+[02-Jan-2026 16:01:15 Europe/Berlin] Teacher ID 11 found in database
+[02-Jan-2026 16:01:15 Europe/Berlin] Authentication successful - User 11 is teacher
+[02-Jan-2026 16:03:26 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 16:03:26 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 16:03:26 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 16:03:26 Europe/Berlin] POST teacher_id: 11
+[02-Jan-2026 16:03:26 Europe/Berlin] teacher_id from POST: 11
+[02-Jan-2026 16:03:26 Europe/Berlin] Teacher check query result rows: 1
+[02-Jan-2026 16:03:26 Europe/Berlin] Teacher ID 11 found in database
+[02-Jan-2026 16:03:26 Europe/Berlin] Authentication successful - User 11 is teacher
+[02-Jan-2026 16:05:07 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 16:05:07 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 16:05:07 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 16:05:07 Europe/Berlin] POST teacher_id: not set
+[02-Jan-2026 16:05:07 Europe/Berlin] No user_id found - unauthorized
+[02-Jan-2026 16:05:11 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 16:05:11 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 16:05:11 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 16:05:11 Europe/Berlin] POST teacher_id: 11
+[02-Jan-2026 16:05:11 Europe/Berlin] teacher_id from POST: 11
+[02-Jan-2026 16:05:11 Europe/Berlin] Teacher check query result rows: 1
+[02-Jan-2026 16:05:11 Europe/Berlin] Teacher ID 11 found in database
+[02-Jan-2026 16:05:11 Europe/Berlin] Authentication successful - User 11 is teacher
+[02-Jan-2026 16:06:25 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 16:06:25 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 16:06:25 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 16:06:25 Europe/Berlin] POST teacher_id: 11
+[02-Jan-2026 16:06:25 Europe/Berlin] teacher_id from POST: 11
+[02-Jan-2026 16:06:25 Europe/Berlin] Teacher check query result rows: 1
+[02-Jan-2026 16:06:25 Europe/Berlin] Teacher ID 11 found in database
+[02-Jan-2026 16:06:25 Europe/Berlin] Authentication successful - User 11 is teacher
+[02-Jan-2026 16:06:34 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 16:06:34 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 16:06:34 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 16:06:34 Europe/Berlin] POST teacher_id: 11
+[02-Jan-2026 16:06:34 Europe/Berlin] teacher_id from POST: 11
+[02-Jan-2026 16:06:34 Europe/Berlin] Teacher check query result rows: 1
+[02-Jan-2026 16:06:34 Europe/Berlin] Teacher ID 11 found in database
+[02-Jan-2026 16:06:34 Europe/Berlin] Authentication successful - User 11 is teacher
+[02-Jan-2026 16:09:00 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 16:09:00 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 16:09:00 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 16:09:00 Europe/Berlin] POST teacher_id: 11
+[02-Jan-2026 16:09:00 Europe/Berlin] teacher_id from POST: 11
+[02-Jan-2026 16:09:00 Europe/Berlin] Teacher check query result rows: 1
+[02-Jan-2026 16:09:00 Europe/Berlin] Teacher ID 11 found in database
+[02-Jan-2026 16:09:00 Europe/Berlin] Authentication successful - User 11 is teacher
+[02-Jan-2026 16:11:34 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 16:11:34 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 16:11:34 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 16:11:34 Europe/Berlin] POST teacher_id: 11
+[02-Jan-2026 16:11:34 Europe/Berlin] teacher_id from POST: 11
+[02-Jan-2026 16:11:34 Europe/Berlin] Teacher check query result rows: 1
+[02-Jan-2026 16:11:34 Europe/Berlin] Teacher ID 11 found in database
+[02-Jan-2026 16:11:34 Europe/Berlin] Authentication successful - User 11 is teacher
+[02-Jan-2026 16:12:01 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 16:12:01 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 16:12:01 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 16:12:01 Europe/Berlin] POST teacher_id: 11
+[02-Jan-2026 16:12:01 Europe/Berlin] teacher_id from POST: 11
+[02-Jan-2026 16:12:01 Europe/Berlin] Teacher check query result rows: 1
+[02-Jan-2026 16:12:01 Europe/Berlin] Teacher ID 11 found in database
+[02-Jan-2026 16:12:01 Europe/Berlin] Authentication successful - User 11 is teacher
+[02-Jan-2026 16:14:53 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 16:14:53 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 16:14:53 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 16:14:53 Europe/Berlin] POST teacher_id: 11
+[02-Jan-2026 16:14:53 Europe/Berlin] teacher_id from POST: 11
+[02-Jan-2026 16:14:53 Europe/Berlin] Teacher check query result rows: 1
+[02-Jan-2026 16:14:53 Europe/Berlin] Teacher ID 11 found in database
+[02-Jan-2026 16:14:53 Europe/Berlin] Authentication successful - User 11 is teacher
+[02-Jan-2026 16:15:16 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 16:15:16 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 16:15:16 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 16:15:16 Europe/Berlin] POST teacher_id: 11
+[02-Jan-2026 16:15:16 Europe/Berlin] teacher_id from POST: 11
+[02-Jan-2026 16:15:16 Europe/Berlin] Teacher check query result rows: 1
+[02-Jan-2026 16:15:16 Europe/Berlin] Teacher ID 11 found in database
+[02-Jan-2026 16:15:16 Europe/Berlin] Authentication successful - User 11 is teacher
+[02-Jan-2026 16:25:57 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 16:25:57 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 16:25:57 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 16:25:57 Europe/Berlin] POST teacher_id: 11
+[02-Jan-2026 16:25:57 Europe/Berlin] teacher_id from POST: 11
+[02-Jan-2026 16:25:57 Europe/Berlin] Teacher check query result rows: 1
+[02-Jan-2026 16:25:57 Europe/Berlin] Teacher ID 11 found in database
+[02-Jan-2026 16:25:57 Europe/Berlin] Authentication successful - User 11 is teacher
+[02-Jan-2026 16:38:23 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 16:38:23 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 16:38:23 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 16:38:23 Europe/Berlin] POST teacher_id: 11
+[02-Jan-2026 16:38:23 Europe/Berlin] teacher_id from POST: 11
+[02-Jan-2026 16:38:23 Europe/Berlin] Teacher check query result rows: 1
+[02-Jan-2026 16:38:23 Europe/Berlin] Teacher ID 11 found in database
+[02-Jan-2026 16:38:23 Europe/Berlin] Authentication successful - User 11 is teacher
+[02-Jan-2026 16:44:32 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 16:44:32 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 16:44:32 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 16:44:32 Europe/Berlin] POST teacher_id: 11
+[02-Jan-2026 16:44:32 Europe/Berlin] teacher_id from POST: 11
+[02-Jan-2026 16:44:32 Europe/Berlin] Teacher check query result rows: 1
+[02-Jan-2026 16:44:32 Europe/Berlin] Teacher ID 11 found in database
+[02-Jan-2026 16:44:32 Europe/Berlin] Authentication successful - User 11 is teacher
+[02-Jan-2026 16:45:05 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 16:45:05 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 16:45:05 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 16:45:05 Europe/Berlin] POST teacher_id: 11
+[02-Jan-2026 16:45:05 Europe/Berlin] teacher_id from POST: 11
+[02-Jan-2026 16:45:05 Europe/Berlin] Teacher check query result rows: 1
+[02-Jan-2026 16:45:05 Europe/Berlin] Teacher ID 11 found in database
+[02-Jan-2026 16:45:05 Europe/Berlin] Authentication successful - User 11 is teacher
+[02-Jan-2026 16:48:23 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 16:48:23 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 16:48:23 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 16:48:23 Europe/Berlin] POST teacher_id: 11
+[02-Jan-2026 16:48:23 Europe/Berlin] teacher_id from POST: 11
+[02-Jan-2026 16:48:23 Europe/Berlin] Teacher check query result rows: 1
+[02-Jan-2026 16:48:23 Europe/Berlin] Teacher ID 11 found in database
+[02-Jan-2026 16:48:23 Europe/Berlin] Authentication successful - User 11 is teacher
+[02-Jan-2026 16:50:00 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 16:50:00 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 16:50:00 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 16:50:00 Europe/Berlin] POST teacher_id: 14
+[02-Jan-2026 16:50:00 Europe/Berlin] teacher_id from POST: 14
+[02-Jan-2026 16:50:00 Europe/Berlin] Teacher check query result rows: 1
+[02-Jan-2026 16:50:00 Europe/Berlin] Teacher ID 14 found in database
+[02-Jan-2026 16:50:00 Europe/Berlin] Authentication successful - User 14 is teacher
+[02-Jan-2026 18:07:15 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 18:07:15 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 18:07:15 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 18:07:15 Europe/Berlin] POST teacher_id: 14
+[02-Jan-2026 18:07:15 Europe/Berlin] teacher_id from POST: 14
+[02-Jan-2026 18:07:15 Europe/Berlin] Teacher check query result rows: 1
+[02-Jan-2026 18:07:15 Europe/Berlin] Teacher ID 14 found in database
+[02-Jan-2026 18:07:15 Europe/Berlin] Authentication successful - User 14 is teacher
+[02-Jan-2026 18:08:21 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 18:08:21 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 18:08:21 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 18:08:21 Europe/Berlin] POST teacher_id: not set
+[02-Jan-2026 18:08:21 Europe/Berlin] No user_id found - unauthorized
+[02-Jan-2026 18:11:27 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 18:11:27 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 18:11:27 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 18:11:27 Europe/Berlin] POST teacher_id: not set
+[02-Jan-2026 18:11:27 Europe/Berlin] No user_id found - unauthorized
+[02-Jan-2026 18:13:54 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 18:13:54 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 18:13:54 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 18:13:54 Europe/Berlin] POST teacher_id: not set
+[02-Jan-2026 18:13:54 Europe/Berlin] No user_id found - unauthorized
+[02-Jan-2026 18:17:21 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 18:17:21 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 18:17:21 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 18:17:21 Europe/Berlin] POST teacher_id: not set
+[02-Jan-2026 18:17:21 Europe/Berlin] No user_id found - unauthorized
+[02-Jan-2026 18:19:22 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 18:19:22 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 18:19:22 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 18:19:22 Europe/Berlin] POST teacher_id: not set
+[02-Jan-2026 18:19:22 Europe/Berlin] No user_id found - unauthorized
+[02-Jan-2026 18:19:41 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 18:19:41 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 18:19:41 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 18:19:41 Europe/Berlin] POST teacher_id: 14
+[02-Jan-2026 18:19:41 Europe/Berlin] teacher_id from POST: 14
+[02-Jan-2026 18:19:41 Europe/Berlin] Teacher check query result rows: 1
+[02-Jan-2026 18:19:41 Europe/Berlin] Teacher ID 14 found in database
+[02-Jan-2026 18:19:41 Europe/Berlin] Authentication successful - User 14 is teacher
+[02-Jan-2026 18:34:06 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 18:34:06 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 18:34:06 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 18:34:06 Europe/Berlin] POST teacher_id: 14
+[02-Jan-2026 18:34:06 Europe/Berlin] teacher_id from POST: 14
+[02-Jan-2026 18:34:06 Europe/Berlin] Teacher check query result rows: 1
+[02-Jan-2026 18:34:06 Europe/Berlin] Teacher ID 14 found in database
+[02-Jan-2026 18:34:06 Europe/Berlin] Authentication successful - User 14 is teacher
+[02-Jan-2026 18:40:36 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 18:40:36 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 18:40:36 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 18:40:36 Europe/Berlin] POST teacher_id: 14
+[02-Jan-2026 18:40:36 Europe/Berlin] teacher_id from POST: 14
+[02-Jan-2026 18:40:36 Europe/Berlin] Teacher check query result rows: 1
+[02-Jan-2026 18:40:36 Europe/Berlin] Teacher ID 14 found in database
+[02-Jan-2026 18:40:36 Europe/Berlin] Authentication successful - User 14 is teacher
+[02-Jan-2026 18:44:48 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 18:44:48 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 18:44:48 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 18:44:48 Europe/Berlin] POST teacher_id: 14
+[02-Jan-2026 18:44:48 Europe/Berlin] teacher_id from POST: 14
+[02-Jan-2026 18:44:48 Europe/Berlin] Teacher check query result rows: 1
+[02-Jan-2026 18:44:48 Europe/Berlin] Teacher ID 14 found in database
+[02-Jan-2026 18:44:48 Europe/Berlin] Authentication successful - User 14 is teacher
+[02-Jan-2026 18:47:21 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 18:47:21 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 18:47:21 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 18:47:21 Europe/Berlin] POST teacher_id: 14
+[02-Jan-2026 18:47:21 Europe/Berlin] teacher_id from POST: 14
+[02-Jan-2026 18:47:21 Europe/Berlin] Teacher check query result rows: 1
+[02-Jan-2026 18:47:21 Europe/Berlin] Teacher ID 14 found in database
+[02-Jan-2026 18:47:21 Europe/Berlin] Authentication successful - User 14 is teacher
+[02-Jan-2026 18:47:40 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 18:47:40 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 18:47:40 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 18:47:40 Europe/Berlin] POST teacher_id: 14
+[02-Jan-2026 18:47:40 Europe/Berlin] teacher_id from POST: 14
+[02-Jan-2026 18:47:40 Europe/Berlin] Teacher check query result rows: 1
+[02-Jan-2026 18:47:40 Europe/Berlin] Teacher ID 14 found in database
+[02-Jan-2026 18:47:40 Europe/Berlin] Authentication successful - User 14 is teacher
+[02-Jan-2026 18:49:55 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 18:49:55 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 18:49:55 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 18:49:55 Europe/Berlin] POST teacher_id: not set
+[02-Jan-2026 18:49:55 Europe/Berlin] No user_id found - unauthorized
+[02-Jan-2026 18:51:26 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 18:51:26 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 18:51:26 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 18:51:26 Europe/Berlin] POST teacher_id: 14
+[02-Jan-2026 18:51:26 Europe/Berlin] teacher_id from POST: 14
+[02-Jan-2026 18:51:26 Europe/Berlin] Teacher check query result rows: 1
+[02-Jan-2026 18:51:26 Europe/Berlin] Teacher ID 14 found in database
+[02-Jan-2026 18:51:26 Europe/Berlin] Authentication successful - User 14 is teacher
+[02-Jan-2026 18:51:34 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 18:51:34 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 18:51:34 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 18:51:34 Europe/Berlin] POST teacher_id: 14
+[02-Jan-2026 18:51:34 Europe/Berlin] teacher_id from POST: 14
+[02-Jan-2026 18:51:34 Europe/Berlin] Teacher check query result rows: 1
+[02-Jan-2026 18:51:34 Europe/Berlin] Teacher ID 14 found in database
+[02-Jan-2026 18:51:34 Europe/Berlin] Authentication successful - User 14 is teacher
+[02-Jan-2026 18:51:48 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 18:51:48 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 18:51:48 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 18:51:48 Europe/Berlin] POST teacher_id: 14
+[02-Jan-2026 18:51:48 Europe/Berlin] teacher_id from POST: 14
+[02-Jan-2026 18:51:48 Europe/Berlin] Teacher check query result rows: 1
+[02-Jan-2026 18:51:48 Europe/Berlin] Teacher ID 14 found in database
+[02-Jan-2026 18:51:48 Europe/Berlin] Authentication successful - User 14 is teacher
+[02-Jan-2026 18:59:47 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 18:59:47 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 18:59:47 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 18:59:47 Europe/Berlin] POST teacher_id: not set
+[02-Jan-2026 18:59:47 Europe/Berlin] No user_id found - unauthorized
+[02-Jan-2026 18:59:51 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 18:59:51 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 18:59:51 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 18:59:51 Europe/Berlin] POST teacher_id: not set
+[02-Jan-2026 18:59:51 Europe/Berlin] No user_id found - unauthorized
+[02-Jan-2026 19:00:55 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 19:00:55 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 19:00:55 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 19:00:55 Europe/Berlin] POST teacher_id: not set
+[02-Jan-2026 19:00:55 Europe/Berlin] No user_id found - unauthorized
+[02-Jan-2026 19:03:05 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 19:03:05 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 19:03:05 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 19:03:05 Europe/Berlin] POST teacher_id: not set
+[02-Jan-2026 19:03:05 Europe/Berlin] No user_id found - unauthorized
+[02-Jan-2026 19:10:19 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 19:10:19 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 19:10:19 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 19:10:19 Europe/Berlin] POST teacher_id: not set
+[02-Jan-2026 19:10:19 Europe/Berlin] No user_id found - unauthorized
+[02-Jan-2026 19:12:45 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 19:12:45 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 19:12:45 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 19:12:45 Europe/Berlin] POST teacher_id: not set
+[02-Jan-2026 19:12:45 Europe/Berlin] No user_id found - unauthorized
+[02-Jan-2026 19:13:23 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 19:13:23 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 19:13:23 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 19:13:23 Europe/Berlin] POST teacher_id: not set
+[02-Jan-2026 19:13:23 Europe/Berlin] No user_id found - unauthorized
+[02-Jan-2026 19:17:25 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 19:17:25 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 19:17:25 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 19:17:25 Europe/Berlin] POST teacher_id: not set
+[02-Jan-2026 19:17:25 Europe/Berlin] No user_id found - unauthorized
+[02-Jan-2026 19:17:26 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 19:17:26 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 19:17:26 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 19:17:26 Europe/Berlin] POST teacher_id: not set
+[02-Jan-2026 19:17:26 Europe/Berlin] No user_id found - unauthorized
+[02-Jan-2026 19:17:32 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 19:17:32 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 19:17:32 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 19:17:32 Europe/Berlin] POST teacher_id: 14
+[02-Jan-2026 19:17:32 Europe/Berlin] teacher_id from POST: 14
+[02-Jan-2026 19:17:32 Europe/Berlin] Teacher check query result rows: 1
+[02-Jan-2026 19:17:32 Europe/Berlin] Teacher ID 14 found in database
+[02-Jan-2026 19:17:32 Europe/Berlin] Authentication successful - User 14 is teacher
+[02-Jan-2026 19:17:33 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 19:17:33 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 19:17:33 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 19:17:33 Europe/Berlin] POST teacher_id: 14
+[02-Jan-2026 19:17:33 Europe/Berlin] teacher_id from POST: 14
+[02-Jan-2026 19:17:33 Europe/Berlin] Teacher check query result rows: 1
+[02-Jan-2026 19:17:33 Europe/Berlin] Teacher ID 14 found in database
+[02-Jan-2026 19:17:33 Europe/Berlin] Authentication successful - User 14 is teacher
+[02-Jan-2026 21:49:16 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 21:49:16 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 21:49:16 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 21:49:16 Europe/Berlin] POST teacher_id: not set
+[02-Jan-2026 21:49:16 Europe/Berlin] No user_id found - unauthorized
+[02-Jan-2026 21:49:52 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 21:49:52 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 21:49:52 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 21:49:52 Europe/Berlin] POST teacher_id: not set
+[02-Jan-2026 21:49:52 Europe/Berlin] No user_id found - unauthorized
+[02-Jan-2026 21:51:36 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 21:51:36 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 21:51:36 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 21:51:36 Europe/Berlin] POST teacher_id: not set
+[02-Jan-2026 21:51:36 Europe/Berlin] No user_id found - unauthorized
+[02-Jan-2026 21:53:53 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 21:53:53 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 21:53:53 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 21:53:53 Europe/Berlin] POST teacher_id: not set
+[02-Jan-2026 21:53:53 Europe/Berlin] No user_id found - unauthorized
+[02-Jan-2026 21:54:37 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 21:54:37 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 21:54:37 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 21:54:37 Europe/Berlin] POST teacher_id: not set
+[02-Jan-2026 21:54:37 Europe/Berlin] No user_id found - unauthorized
+[02-Jan-2026 21:54:44 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 21:54:44 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 21:54:44 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 21:54:44 Europe/Berlin] POST teacher_id: not set
+[02-Jan-2026 21:54:44 Europe/Berlin] No user_id found - unauthorized
+[02-Jan-2026 21:58:04 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 21:58:04 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 21:58:04 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 21:58:04 Europe/Berlin] POST teacher_id: not set
+[02-Jan-2026 21:58:04 Europe/Berlin] No user_id found - unauthorized
+[02-Jan-2026 21:58:10 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 21:58:10 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 21:58:10 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 21:58:10 Europe/Berlin] POST teacher_id: not set
+[02-Jan-2026 21:58:10 Europe/Berlin] No user_id found - unauthorized
+[02-Jan-2026 21:58:42 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 21:58:42 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 21:58:42 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 21:58:42 Europe/Berlin] POST teacher_id: 11
+[02-Jan-2026 21:58:42 Europe/Berlin] teacher_id from POST: 11
+[02-Jan-2026 21:58:42 Europe/Berlin] Teacher check query result rows: 1
+[02-Jan-2026 21:58:42 Europe/Berlin] Teacher ID 11 found in database
+[02-Jan-2026 21:58:42 Europe/Berlin] Authentication successful - User 11 is teacher
+[02-Jan-2026 21:58:48 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 21:58:48 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 21:58:48 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 21:58:48 Europe/Berlin] POST teacher_id: 11
+[02-Jan-2026 21:58:48 Europe/Berlin] teacher_id from POST: 11
+[02-Jan-2026 21:58:48 Europe/Berlin] Teacher check query result rows: 1
+[02-Jan-2026 21:58:48 Europe/Berlin] Teacher ID 11 found in database
+[02-Jan-2026 21:58:48 Europe/Berlin] Authentication successful - User 11 is teacher
+[02-Jan-2026 21:59:11 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 21:59:11 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 21:59:11 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 21:59:11 Europe/Berlin] POST teacher_id: 11
+[02-Jan-2026 21:59:11 Europe/Berlin] teacher_id from POST: 11
+[02-Jan-2026 21:59:11 Europe/Berlin] Teacher check query result rows: 1
+[02-Jan-2026 21:59:11 Europe/Berlin] Teacher ID 11 found in database
+[02-Jan-2026 21:59:11 Europe/Berlin] Authentication successful - User 11 is teacher
+[02-Jan-2026 21:59:59 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 21:59:59 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 21:59:59 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 21:59:59 Europe/Berlin] POST teacher_id: 11
+[02-Jan-2026 21:59:59 Europe/Berlin] teacher_id from POST: 11
+[02-Jan-2026 21:59:59 Europe/Berlin] Teacher check query result rows: 1
+[02-Jan-2026 21:59:59 Europe/Berlin] Teacher ID 11 found in database
+[02-Jan-2026 21:59:59 Europe/Berlin] Authentication successful - User 11 is teacher
+[02-Jan-2026 22:00:45 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 22:00:45 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 22:00:45 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 22:00:45 Europe/Berlin] POST teacher_id: 11
+[02-Jan-2026 22:00:45 Europe/Berlin] teacher_id from POST: 11
+[02-Jan-2026 22:00:45 Europe/Berlin] Teacher check query result rows: 1
+[02-Jan-2026 22:00:45 Europe/Berlin] Teacher ID 11 found in database
+[02-Jan-2026 22:00:45 Europe/Berlin] Authentication successful - User 11 is teacher
+[02-Jan-2026 22:00:51 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 22:00:51 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 22:00:51 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 22:00:51 Europe/Berlin] POST teacher_id: 11
+[02-Jan-2026 22:00:51 Europe/Berlin] teacher_id from POST: 11
+[02-Jan-2026 22:00:51 Europe/Berlin] Teacher check query result rows: 1
+[02-Jan-2026 22:00:51 Europe/Berlin] Teacher ID 11 found in database
+[02-Jan-2026 22:00:51 Europe/Berlin] Authentication successful - User 11 is teacher
+[02-Jan-2026 22:00:59 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 22:00:59 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 22:00:59 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 22:00:59 Europe/Berlin] POST teacher_id: not set
+[02-Jan-2026 22:00:59 Europe/Berlin] No user_id found - unauthorized
+[02-Jan-2026 22:02:11 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 22:02:11 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 22:02:11 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 22:02:11 Europe/Berlin] POST teacher_id: not set
+[02-Jan-2026 22:02:11 Europe/Berlin] No user_id found - unauthorized
+[02-Jan-2026 22:02:14 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 22:02:14 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 22:02:14 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 22:02:14 Europe/Berlin] POST teacher_id: 11
+[02-Jan-2026 22:02:14 Europe/Berlin] teacher_id from POST: 11
+[02-Jan-2026 22:02:14 Europe/Berlin] Teacher check query result rows: 1
+[02-Jan-2026 22:02:14 Europe/Berlin] Teacher ID 11 found in database
+[02-Jan-2026 22:02:14 Europe/Berlin] Authentication successful - User 11 is teacher
+[02-Jan-2026 22:02:15 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 22:02:15 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 22:02:15 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 22:02:15 Europe/Berlin] POST teacher_id: 11
+[02-Jan-2026 22:02:15 Europe/Berlin] teacher_id from POST: 11
+[02-Jan-2026 22:02:15 Europe/Berlin] Teacher check query result rows: 1
+[02-Jan-2026 22:02:15 Europe/Berlin] Teacher ID 11 found in database
+[02-Jan-2026 22:02:15 Europe/Berlin] Authentication successful - User 11 is teacher
+[02-Jan-2026 22:09:12 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 22:09:12 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 22:09:12 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 22:09:12 Europe/Berlin] POST teacher_id: not set
+[02-Jan-2026 22:09:12 Europe/Berlin] No user_id found - unauthorized
+[02-Jan-2026 22:09:27 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 22:09:27 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 22:09:27 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 22:09:27 Europe/Berlin] POST teacher_id: 11
+[02-Jan-2026 22:09:27 Europe/Berlin] teacher_id from POST: 11
+[02-Jan-2026 22:09:27 Europe/Berlin] Teacher check query result rows: 1
+[02-Jan-2026 22:09:27 Europe/Berlin] Teacher ID 11 found in database
+[02-Jan-2026 22:09:27 Europe/Berlin] Authentication successful - User 11 is teacher
+[02-Jan-2026 22:09:28 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 22:09:28 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 22:09:28 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 22:09:28 Europe/Berlin] POST teacher_id: 11
+[02-Jan-2026 22:09:28 Europe/Berlin] teacher_id from POST: 11
+[02-Jan-2026 22:09:28 Europe/Berlin] Teacher check query result rows: 1
+[02-Jan-2026 22:09:28 Europe/Berlin] Teacher ID 11 found in database
+[02-Jan-2026 22:09:28 Europe/Berlin] Authentication successful - User 11 is teacher
+[02-Jan-2026 22:09:30 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 22:09:30 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 22:09:30 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 22:09:30 Europe/Berlin] POST teacher_id: 11
+[02-Jan-2026 22:09:30 Europe/Berlin] teacher_id from POST: 11
+[02-Jan-2026 22:09:30 Europe/Berlin] Teacher check query result rows: 1
+[02-Jan-2026 22:09:30 Europe/Berlin] Teacher ID 11 found in database
+[02-Jan-2026 22:09:30 Europe/Berlin] Authentication successful - User 11 is teacher
+[02-Jan-2026 22:09:31 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 22:09:31 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 22:09:31 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 22:09:31 Europe/Berlin] POST teacher_id: 11
+[02-Jan-2026 22:09:31 Europe/Berlin] teacher_id from POST: 11
+[02-Jan-2026 22:09:31 Europe/Berlin] Teacher check query result rows: 1
+[02-Jan-2026 22:09:31 Europe/Berlin] Teacher ID 11 found in database
+[02-Jan-2026 22:09:31 Europe/Berlin] Authentication successful - User 11 is teacher
+[02-Jan-2026 22:09:34 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 22:09:34 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 22:09:34 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 22:09:34 Europe/Berlin] POST teacher_id: 11
+[02-Jan-2026 22:09:34 Europe/Berlin] teacher_id from POST: 11
+[02-Jan-2026 22:09:34 Europe/Berlin] Teacher check query result rows: 1
+[02-Jan-2026 22:09:34 Europe/Berlin] Teacher ID 11 found in database
+[02-Jan-2026 22:09:34 Europe/Berlin] Authentication successful - User 11 is teacher
+[02-Jan-2026 22:10:33 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 22:10:33 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 22:10:33 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 22:10:33 Europe/Berlin] POST teacher_id: 11
+[02-Jan-2026 22:10:33 Europe/Berlin] teacher_id from POST: 11
+[02-Jan-2026 22:10:33 Europe/Berlin] Teacher check query result rows: 1
+[02-Jan-2026 22:10:33 Europe/Berlin] Teacher ID 11 found in database
+[02-Jan-2026 22:10:33 Europe/Berlin] Authentication successful - User 11 is teacher
+[02-Jan-2026 22:25:43 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 22:25:43 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 22:25:43 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 22:25:43 Europe/Berlin] POST teacher_id: 11
+[02-Jan-2026 22:25:43 Europe/Berlin] teacher_id from POST: 11
+[02-Jan-2026 22:25:43 Europe/Berlin] Teacher check query result rows: 1
+[02-Jan-2026 22:25:43 Europe/Berlin] Teacher ID 11 found in database
+[02-Jan-2026 22:25:43 Europe/Berlin] Authentication successful - User 11 is teacher
+[02-Jan-2026 22:26:18 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 22:26:18 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 22:26:18 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 22:26:18 Europe/Berlin] POST teacher_id: 11
+[02-Jan-2026 22:26:18 Europe/Berlin] teacher_id from POST: 11
+[02-Jan-2026 22:26:18 Europe/Berlin] Teacher check query result rows: 1
+[02-Jan-2026 22:26:18 Europe/Berlin] Teacher ID 11 found in database
+[02-Jan-2026 22:26:18 Europe/Berlin] Authentication successful - User 11 is teacher
+[02-Jan-2026 22:26:30 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 22:26:30 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 22:26:30 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 22:26:30 Europe/Berlin] POST teacher_id: not set
+[02-Jan-2026 22:26:30 Europe/Berlin] No user_id found - unauthorized
+[02-Jan-2026 22:29:51 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 22:29:51 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 22:29:51 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 22:29:51 Europe/Berlin] POST teacher_id: not set
+[02-Jan-2026 22:29:51 Europe/Berlin] No user_id found - unauthorized
+[02-Jan-2026 22:31:32 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 22:31:32 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 22:31:32 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 22:31:32 Europe/Berlin] POST teacher_id: not set
+[02-Jan-2026 22:31:32 Europe/Berlin] No user_id found - unauthorized
+[02-Jan-2026 22:31:46 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 22:31:46 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 22:31:46 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 22:31:46 Europe/Berlin] POST teacher_id: not set
+[02-Jan-2026 22:31:46 Europe/Berlin] No user_id found - unauthorized
+[02-Jan-2026 22:34:07 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 22:34:07 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 22:34:07 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 22:34:07 Europe/Berlin] POST teacher_id: not set
+[02-Jan-2026 22:34:07 Europe/Berlin] No user_id found - unauthorized
+[02-Jan-2026 22:34:31 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 22:34:31 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 22:34:31 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 22:34:31 Europe/Berlin] POST teacher_id: not set
+[02-Jan-2026 22:34:31 Europe/Berlin] No user_id found - unauthorized
+[02-Jan-2026 22:34:38 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 22:34:38 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 22:34:38 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 22:34:38 Europe/Berlin] POST teacher_id: not set
+[02-Jan-2026 22:34:38 Europe/Berlin] No user_id found - unauthorized
+[02-Jan-2026 22:35:19 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 22:35:19 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 22:35:19 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 22:35:19 Europe/Berlin] POST teacher_id: not set
+[02-Jan-2026 22:35:19 Europe/Berlin] No user_id found - unauthorized
+[02-Jan-2026 22:36:08 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 22:36:08 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 22:36:08 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 22:36:08 Europe/Berlin] POST teacher_id: not set
+[02-Jan-2026 22:36:08 Europe/Berlin] No user_id found - unauthorized
+[02-Jan-2026 22:36:28 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 22:36:28 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 22:36:28 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 22:36:28 Europe/Berlin] POST teacher_id: not set
+[02-Jan-2026 22:36:28 Europe/Berlin] No user_id found - unauthorized
+[02-Jan-2026 22:37:34 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 22:37:34 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 22:37:34 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 22:37:34 Europe/Berlin] POST teacher_id: not set
+[02-Jan-2026 22:37:34 Europe/Berlin] No user_id found - unauthorized
+[02-Jan-2026 22:38:53 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 22:38:53 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 22:38:53 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 22:38:53 Europe/Berlin] POST teacher_id: not set
+[02-Jan-2026 22:38:53 Europe/Berlin] No user_id found - unauthorized
+[02-Jan-2026 22:41:39 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 22:41:39 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 22:41:39 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 22:41:39 Europe/Berlin] POST teacher_id: not set
+[02-Jan-2026 22:41:39 Europe/Berlin] No user_id found - unauthorized
+[02-Jan-2026 22:42:22 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 22:42:22 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 22:42:22 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 22:42:22 Europe/Berlin] POST teacher_id: 11
+[02-Jan-2026 22:42:22 Europe/Berlin] teacher_id from POST: 11
+[02-Jan-2026 22:42:22 Europe/Berlin] Teacher check query result rows: 1
+[02-Jan-2026 22:42:22 Europe/Berlin] Teacher ID 11 found in database
+[02-Jan-2026 22:42:22 Europe/Berlin] Authentication successful - User 11 is teacher
+[02-Jan-2026 22:51:12 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 22:51:12 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 22:51:12 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 22:51:12 Europe/Berlin] POST teacher_id: not set
+[02-Jan-2026 22:51:12 Europe/Berlin] No user_id found - unauthorized
+[02-Jan-2026 22:52:31 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 22:52:31 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 22:52:31 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 22:52:31 Europe/Berlin] POST teacher_id: not set
+[02-Jan-2026 22:52:31 Europe/Berlin] No user_id found - unauthorized
+[02-Jan-2026 22:53:13 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 22:53:13 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 22:53:13 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 22:53:13 Europe/Berlin] POST teacher_id: not set
+[02-Jan-2026 22:53:13 Europe/Berlin] No user_id found - unauthorized
+[02-Jan-2026 22:59:19 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 22:59:19 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 22:59:19 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 22:59:19 Europe/Berlin] POST teacher_id: not set
+[02-Jan-2026 22:59:19 Europe/Berlin] No user_id found - unauthorized
+[02-Jan-2026 23:00:44 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 23:00:44 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 23:00:44 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 23:00:44 Europe/Berlin] POST teacher_id: not set
+[02-Jan-2026 23:00:44 Europe/Berlin] No user_id found - unauthorized
+[02-Jan-2026 23:02:17 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 23:02:17 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 23:02:17 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 23:02:17 Europe/Berlin] POST teacher_id: not set
+[02-Jan-2026 23:02:17 Europe/Berlin] No user_id found - unauthorized
+[02-Jan-2026 23:04:02 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 23:04:02 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 23:04:02 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 23:04:02 Europe/Berlin] POST teacher_id: 11
+[02-Jan-2026 23:04:02 Europe/Berlin] teacher_id from POST: 11
+[02-Jan-2026 23:04:02 Europe/Berlin] Teacher check query result rows: 1
+[02-Jan-2026 23:04:02 Europe/Berlin] Teacher ID 11 found in database
+[02-Jan-2026 23:04:02 Europe/Berlin] Authentication successful - User 11 is teacher
+[02-Jan-2026 23:06:19 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 23:06:19 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 23:06:19 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 23:06:19 Europe/Berlin] POST teacher_id: not set
+[02-Jan-2026 23:06:19 Europe/Berlin] No user_id found - unauthorized
+[02-Jan-2026 23:07:33 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 23:07:33 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 23:07:33 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 23:07:33 Europe/Berlin] POST teacher_id: 11
+[02-Jan-2026 23:07:33 Europe/Berlin] teacher_id from POST: 11
+[02-Jan-2026 23:07:33 Europe/Berlin] Teacher check query result rows: 1
+[02-Jan-2026 23:07:33 Europe/Berlin] Teacher ID 11 found in database
+[02-Jan-2026 23:07:33 Europe/Berlin] Authentication successful - User 11 is teacher
+[02-Jan-2026 23:07:37 Europe/Berlin] Courses API called - Action: delete_course
+[02-Jan-2026 23:07:37 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 23:07:37 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 23:07:37 Europe/Berlin] POST teacher_id: 11
+[02-Jan-2026 23:07:37 Europe/Berlin] teacher_id from POST: 11
+[02-Jan-2026 23:07:37 Europe/Berlin] Teacher check query result rows: 1
+[02-Jan-2026 23:07:37 Europe/Berlin] Teacher ID 11 found in database
+[02-Jan-2026 23:07:37 Europe/Berlin] Authentication successful - User 11 is teacher
+[02-Jan-2026 23:07:38 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 23:07:38 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 23:07:38 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 23:07:38 Europe/Berlin] POST teacher_id: 11
+[02-Jan-2026 23:07:38 Europe/Berlin] teacher_id from POST: 11
+[02-Jan-2026 23:07:38 Europe/Berlin] Teacher check query result rows: 1
+[02-Jan-2026 23:07:38 Europe/Berlin] Teacher ID 11 found in database
+[02-Jan-2026 23:07:38 Europe/Berlin] Authentication successful - User 11 is teacher
+[02-Jan-2026 23:13:38 Europe/Berlin] Courses API called - Action: create_course
+[02-Jan-2026 23:13:38 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 23:13:38 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 23:13:38 Europe/Berlin] POST teacher_id: 11
+[02-Jan-2026 23:13:38 Europe/Berlin] teacher_id from POST: 11
+[02-Jan-2026 23:13:38 Europe/Berlin] Teacher check query result rows: 1
+[02-Jan-2026 23:13:38 Europe/Berlin] Teacher ID 11 found in database
+[02-Jan-2026 23:13:38 Europe/Berlin] Authentication successful - User 11 is teacher
+[02-Jan-2026 23:13:38 Europe/Berlin] createCourse called with userId: 11
+[02-Jan-2026 23:13:38 Europe/Berlin] Course data - Title: كورس المراجعة النهائية 2ث, Subtitle: كورس المراجعة النهائية لطلاب الصف الثاني الثانوي, Price: 200, Color: #710003
+[02-Jan-2026 23:13:38 Europe/Berlin] Generated course code: COURSE_1767392018_7343
+[02-Jan-2026 23:13:38 Europe/Berlin] Preparing SQL: INSERT INTO courses (course_code, title, subtitle, description, teacher_id, price, image_color, wallpaper, created_at) 
+              VALUES (?, ?, ?, ?, ?, ?, ?, ?, NOW())
+[02-Jan-2026 23:13:38 Europe/Berlin] Binding parameters: s(code), s, s, s, i, d, s, s
+[02-Jan-2026 23:13:38 Europe/Berlin] Course created successfully with ID: 30, Wallpaper: 
+[02-Jan-2026 23:13:38 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 23:13:38 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 23:13:38 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 23:13:38 Europe/Berlin] POST teacher_id: 11
+[02-Jan-2026 23:13:38 Europe/Berlin] teacher_id from POST: 11
+[02-Jan-2026 23:13:38 Europe/Berlin] Teacher check query result rows: 1
+[02-Jan-2026 23:13:38 Europe/Berlin] Teacher ID 11 found in database
+[02-Jan-2026 23:13:38 Europe/Berlin] Authentication successful - User 11 is teacher
+[02-Jan-2026 23:17:15 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 23:17:15 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 23:17:15 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 23:17:15 Europe/Berlin] POST teacher_id: not set
+[02-Jan-2026 23:17:15 Europe/Berlin] No user_id found - unauthorized
+[02-Jan-2026 23:18:12 Europe/Berlin] Courses API called - Action: get_courses
+[02-Jan-2026 23:18:12 Europe/Berlin] Session user_id: not set
+[02-Jan-2026 23:18:12 Europe/Berlin] Session user_role: not set
+[02-Jan-2026 23:18:12 Europe/Berlin] POST teacher_id: 14
+[02-Jan-2026 23:18:12 Europe/Berlin] teacher_id from POST: 14
+[02-Jan-2026 23:18:12 Europe/Berlin] Teacher check query result rows: 1
+[02-Jan-2026 23:18:12 Europe/Berlin] Teacher ID 14 found in database
+[02-Jan-2026 23:18:12 Europe/Berlin] Authentication successful - User 14 is teacher

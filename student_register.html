@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل حساب طالب - LalaLand</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="CSS/login_style.css">
+</head>
+<body>
+
+<!-- Dark Mode Toggle -->
+<button id="darkModeToggle" class="floating-toggle" aria-label="Toggle Dark Mode">🌙</button>
+
+<div class="container">
+    <!-- Left Panel: Decorative -->
+    <div class="left-panel">
+        <h2>مرحباً بك يا طالب!</h2>
+        <p>انضم إلى مجتمعنا التعليمي المتميز. أطلق العنان لإمكاناتك وابدأ رحلتك معنا اليوم.</p>
+    </div>
+
+    <!-- Right Panel: Form -->
+    <div class="right-panel">
+        <h2>إنشاء حساب جديد</h2>
+        <form id="registrationForm" action="#" method="POST">
+            
+            <!-- Full Name -->
+            <div class="form-group">
+                <label for="fullName">الاسم بالكامل</label>
+                <input type="text" id="fullName" placeholder="مثال: أحمد علي" autocomplete="name">
+                <span class="error-message" id="nameError">يجب أن يحتوي الاسم على كلمتين على الأقل (أحرف فقط).</span>
+            </div>
+
+            <!-- Email Address -->
+            <div class="form-group">
+                <label for="email">البريد الإلكتروني</label>
+                <input type="email" id="email" placeholder="مثال: student@example.com" autocomplete="email">
+                <span class="error-message" id="emailError">يرجى إدخال بريد إلكتروني صحيح.</span>
+            </div>
+
+            <!-- Password -->
+            <div class="form-group">
+                <label for="password">كلمة المرور</label>
+                <input type="password" id="password" placeholder="8 أحرف، حرف كبير، حرف صغير، رقم">
+                <span class="error-message" id="passwordError">كلمة المرور يجب أن تكون 8 أحرف على الأقل، وتحتوي على حرف كبير، حرف صغير، ورقم.</span>
+            </div>
+
+            <!-- Confirm Password -->
+            <div class="form-group">
+                <label for="confirmPassword">تأكيد كلمة المرور</label>
+                <input type="password" id="confirmPassword" placeholder="أعد إدخال كلمة المرور">
+                <span class="error-message" id="confirmError">كلمات المرور غير متطابقة.</span>
+            </div>
+
+            <!-- Grade/Class (Single Selection for Students) -->
+            <div class="form-group">
+                <label for="grade">الصف الدراسي</label>
+                <select id="grade" style="width: 100%; padding: 12px 15px; border: 2px solid #dfe6e9; border-radius: 8px; font-family: 'Cairo'; background-color: #f9f9f9;">
+                    <option value="">اختر الصف...</option>
+                    <option value="1">الصف الأول</option>
+                    <option value="2">الصف الثاني</option>
+                    <option value="3">الصف الثالث</option>
+                </select>
+                <span class="error-message" id="gradeError">يرجى اختيار صف.</span>
+            </div>
+
+            <!-- Message Container -->
+            <div id="messageContainer" style="display: none; padding: 10px; border-radius: 5px; margin-bottom: 15px; text-align: center; font-weight: bold;"></div>
+
+            <!-- Register Button -->
+            <button type="submit" id="registerBtn" disabled>سجل الآن</button>
+
+            <!-- Links -->
+            <div class="links">
+                <p>لديك حساب بالفعل؟ <a href="student_login.html">تسجيل الدخول</a></p>
+                <p>هل أنت معلم؟ <a href="teacher_register.html">سجل كمعلم</a></p>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="JS/data-service.js"></script>
+<script src="JS/theme.js"></script>
+<script src="JS/register_script.js"></script>
+    <!-- Notification Container -->
+    <div id="notification-container"></div>
+</body>
+</html>

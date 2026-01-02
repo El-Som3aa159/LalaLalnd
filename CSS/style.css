@@ -1,0 +1,462 @@
+﻿/* style.css */
+
+:root {
+    /* Light Mode Variables */
+    --primary-color: #6c5ce7; /* Purple */
+    --secondary-color: #00b894; /* Green/Teal */
+    --accent-color: #fdcb6e; /* Yellow/Orange */
+    --bg-color: #f9f9f9;
+    --card-bg: #ffffff;
+    --text-main: #2d3436;
+    --text-secondary: #636e72;
+    --nav-bg: #ffffff;
+    --shadow-light: 0 4px 6px rgba(0,0,0,0.05);
+    --shadow-hover: 0 10px 20px rgba(0,0,0,0.1);
+    --gradient-hero: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%);
+    --badge-bg: #dfe6e9;
+    --badge-text: #2d3436;
+}
+
+body.dark-mode {
+    /* Dark Mode Variables */
+    --bg-color: #1e1e2e;
+    --card-bg: #2d2d44;
+    --text-main: #ffffff;
+    --text-secondary: #b2bec3;
+    --nav-bg: #2d2d44;
+    --shadow-light: 0 4px 6px rgba(0,0,0,0.3);
+    --shadow-hover: 0 10px 20px rgba(0,0,0,0.5);
+    --gradient-hero: linear-gradient(135deg, #4834d4 0%, #686de0 100%);
+    --badge-bg: #404058;
+    --badge-text: #dfe6e9;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    direction: rtl;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    overflow-x: hidden;
+}
+
+/* Header */
+
+
+/* --- Notification System --- */
+#notification-container {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+    pointer-events: none;
+}
+
+#notification-container > div {
+    pointer-events: auto;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    text-align: center;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 600;
+    animation: slideDown 0.3s ease-out forwards;
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* --- Dark Mode Toggle Fix --- */
+#darkModeToggle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+    border: none;
+    background-color: rgba(0,0,0,0.05);
+}
+body.dark-mode #darkModeToggle {
+    background-color: rgba(255,255,255,0.1);
+    color: #fff;
+}
+#darkModeToggle:hover {
+    transform: scale(1.1);
+}
+
+/* --- Comprehensive Dark Mode Coverage --- */
+body.dark-mode .card,
+body.dark-mode .form-container,
+body.dark-mode .settings-section,
+body.dark-mode .wallet-section,
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode textarea {
+    background-color: var(--card-bg);
+    color: var(--text-main);
+    border-color: #444;
+}
+
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder {
+    color: #aaa;
+}
+
+header {
+    background-color: var(--nav-bg);
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: var(--shadow-light);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    letter-spacing: 1px;
+}
+
+.auth-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Buttons */
+.btn {
+    padding: 10px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+    display: inline-block;
+}
+
+.btn-login {
+    color: var(--text-main);
+    background: transparent;
+    border: 2px solid var(--primary-color);
+}
+
+.btn-login:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+.btn-register {
+    background: var(--primary-color);
+    color: white;
+    box-shadow: 0 4px 15px rgba(108, 92, 231, 0.3);
+}
+
+.btn-register:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(108, 92, 231, 0.4);
+    background-color: #5649c0;
+}
+
+.btn-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text-main);
+    transition: transform 0.3s;
+}
+
+.btn-toggle:hover {
+    transform: rotate(20deg) scale(1.1);
+}
+
+/* Hero Section */
+.hero {
+    height: 85vh; /* Full screen focus */
+    background: var(--gradient-hero);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjIiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4xKSIvPjwvc3ZnPg==');
+    opacity: 0.4;
+}
+
+.hero-content {
+    z-index: 1;
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    font-weight: 800;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+.btn-hero {
+    background: var(--accent-color);
+    color: #2d3436;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.btn-hero:hover {
+    transform: scale(1.05);
+    background: #ffeaa7;
+}
+
+/* Sections Common */
+section {
+    padding: 80px 5%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    color: var(--text-main);
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 5px;
+    background: var(--secondary-color);
+    margin: 15px auto 0;
+    border-radius: 10px;
+}
+
+/* Grade Filters */
+.grade-filters {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 12px 30px;
+    border: 2px solid #dfe6e9;
+    background: var(--card-bg);
+    color: var(--text-secondary);
+    border-radius: 50px;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 1rem;
+}
+
+.filter-btn:hover, .filter-btn.active {
+    border-color: var(--secondary-color);
+    background: var(--secondary-color);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 184, 148, 0.3);
+}
+
+/* Teachers Grid */
+.teachers-grid, .courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.teacher-card {
+    background: var(--card-bg);
+    border-radius: 20px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: var(--shadow-light);
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.teacher-card.hidden {
+    display: none;
+}
+
+.teacher-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-hover);
+    border-color: var(--primary-color);
+}
+
+.teacher-avatar {
+    width: 100px;
+    height: 100px;
+    background: #f1f2f6;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+.teacher-name {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+    color: var(--text-main);
+}
+
+.teacher-subject {
+    color: var(--secondary-color);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.badges {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.grade-badge {
+    background-color: var(--badge-bg);
+    color: var(--badge-text);
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* Courses Section */
+.courses-section {
+    background-color: #f1f2f6; /* Slightly different bg for contrast */
+}
+
+body.dark-mode .courses-section {
+    background-color: #252538;
+}
+
+.course-card {
+    background: var(--card-bg);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--shadow-light);
+    transition: all 0.3s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-hover);
+}
+
+.course-thumbnail {
+    height: 160px;
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    position: relative;
+}
+
+.course-info {
+    padding: 20px;
+}
+
+.course-info h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: var(--text-main);
+}
+
+.course-info p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.browse-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.btn-browse {
+    background: transparent;
+    border: 2px solid var(--text-main);
+    color: var(--text-main);
+    padding: 12px 40px;
+    font-size: 1.1rem;
+}
+
+.btn-browse:hover {
+    background: var(--text-main);
+    color: var(--bg-color);
+}
+
+/* Footer */
+footer {
+    background: #2d3436;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .auth-buttons {
+        width: 100%;
+        justify-content: center;
+    }
+}

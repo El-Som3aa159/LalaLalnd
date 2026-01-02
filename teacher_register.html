@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل حساب معلم - LalaLand</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="CSS/login_style.css">
+    <style>
+        /* Teacher Specific Overrides */
+        .left-panel {
+            background: linear-gradient(135deg, #2d3436 0%, #636e72 100%);
+        }
+        button {
+            background: linear-gradient(to right, #6c5ce7 0%, #a29bfe 100%);
+        }
+        button:hover {
+            box-shadow: 0 8px 20px rgba(108, 92, 231, 0.4);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Left Panel: Decorative -->
+    <div class="left-panel">
+        <h2>مرحباً بك يا معلم!</h2>
+        <p>انضم إلى نخبة المعلمين في منصتنا. شارك معرفتك، ألهم الطلاب، وابنِ مستقبلاً تعليمياً أفضل.</p>
+    </div>
+
+    <!-- Right Panel: Form -->
+    <div class="right-panel">
+        <h2>إنشاء حساب معلم</h2>
+        <form id="registrationForm" action="#" method="POST">
+            
+            <!-- Full Name -->
+            <div class="form-group">
+                <label for="fullName">الاسم بالكامل</label>
+                <input type="text" id="fullName" placeholder="مثال: أ. محمد أحمد" autocomplete="name">
+                <span class="error-message" id="nameError">يجب أن يحتوي الاسم على كلمتين على الأقل.</span>
+            </div>
+
+            <!-- Specialization -->
+            <div class="form-group">
+                <label for="specialization">التخصص</label>
+                <select id="specialization" style="width: 100%; padding: 12px 15px; border: 2px solid #dfe6e9; border-radius: 8px; font-family: 'Cairo'; background-color: #f9f9f9;">
+                    <option value="">اختر التخصص...</option>
+                    <option value="arabic">اللغة العربية</option>
+                    <option value="english">اللغة الإنجليزية</option>
+                    <option value="math">الرياضيات</option>
+                    <option value="physics">الفيزياء</option>
+                    <option value="chemistry">الكيمياء</option>
+                    <option value="biology">الأحياء</option>
+                    <option value="history">التاريخ</option>
+                    <option value="geography">الجغرافيا</option>
+                    <option value="other">أخرى</option>
+                </select>
+            </div>
+
+            <!-- Grade/Class (Multiple Selection) -->
+            <div class="form-group">
+                <label>الصفوف الدراسية (اختر واحد أو أكثر)</label>
+                <div style="display: flex; gap: 15px; margin-top: 10px; flex-wrap: wrap;">
+                    <label style="display: flex; align-items: center; gap: 8px; font-weight: normal; cursor: pointer;">
+                        <input type="checkbox" id="grade1" name="grades" value="1" style="width: 18px; height: 18px; cursor: pointer;">
+                        <span>الصف الأول</span>
+                    </label>
+                    <label style="display: flex; align-items: center; gap: 8px; font-weight: normal; cursor: pointer;">
+                        <input type="checkbox" id="grade2" name="grades" value="2" style="width: 18px; height: 18px; cursor: pointer;">
+                        <span>الصف الثاني</span>
+                    </label>
+                    <label style="display: flex; align-items: center; gap: 8px; font-weight: normal; cursor: pointer;">
+                        <input type="checkbox" id="grade3" name="grades" value="3" style="width: 18px; height: 18px; cursor: pointer;">
+                        <span>الصف الثالث</span>
+                    </label>
+                </div>
+                <span class="error-message" id="gradeError" style="display: block; margin-top: 8px;">يرجى اختيار صف واحد على الأقل.</span>
+            </div>
+
+            <!-- Email Address -->
+            <div class="form-group">
+                <label for="email">البريد الإلكتروني</label>
+                <input type="email" id="email" placeholder="مثال: teacher@example.com" autocomplete="email">
+                <span class="error-message" id="emailError">يرجى إدخال بريد إلكتروني صحيح.</span>
+            </div>
+
+            <!-- Password -->
+            <div class="form-group">
+                <label for="password">كلمة المرور</label>
+                <input type="password" id="password" placeholder="8 أحرف، حرف كبير، حرف صغير، رقم">
+                <span class="error-message" id="passwordError">كلمة المرور يجب أن تكون 8 أحرف على الأقل.</span>
+            </div>
+
+            <!-- Confirm Password -->
+            <div class="form-group">
+                <label for="confirmPassword">تأكيد كلمة المرور</label>
+                <input type="password" id="confirmPassword" placeholder="أعد إدخال كلمة المرور">
+                <span class="error-message" id="confirmError">كلمات المرور غير متطابقة.</span>
+            </div>
+
+            <!-- Message Container -->
+            <div id="messageContainer" style="display: none; padding: 10px; border-radius: 5px; margin-bottom: 15px; text-align: center; font-weight: bold;"></div>
+
+            <!-- Register Button -->
+            <button type="submit" id="registerBtn" disabled>سجل كمعلم</button>
+
+            <!-- Links -->
+            <div class="links">
+                <p>لديك حساب بالفعل؟ <a href="student_login.html">تسجيل الدخول</a></p>
+                <p>هل أنت طالب؟ <a href="student_register.html">سجل كطالب</a></p>
+            </div>
+        </form>
+    </div>
+</div>
+
+    </div>
+</div>
+
+    <!-- External JS -->
+    <script src="JS/data-service.js"></script>
+    <script src="JS/theme.js"></script>
+    <script src="JS/teacher_register_script.js"></script>
+    <!-- Notification Container -->
+    <div id="notification-container"></div>
+</body>
+</html>

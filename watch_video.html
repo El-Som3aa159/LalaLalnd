@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مشاهدة الفيديو - LalaLand</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Video.js CSS -->
+    <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
+    <link rel="stylesheet" href="CSS/lesson_style.css">
+    <style>
+        .video-player-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .video-info {
+            margin-top: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        body.dark-mode .video-info {
+            background: #2d2d44;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="lesson-header">
+        <div class="header-right">
+            <div class="logo">LalaLand</div>
+            <h2 id="videoTitle" style="color: white; margin: 0; font-size: 1.3rem;">عنوان الفيديو</h2>
+        </div>
+        <div class="header-left">
+            <button id="darkModeToggle" class="btn-toggle" aria-label="Toggle Dark Mode">🌙</button>
+            <button id="backButton" class="btn-back">← العودة</button>
+        </div>
+    </header>
+
+    <main class="video-player-container">
+        <!-- Video Player -->
+        <section class="video-section">
+            <div id="videoPlayerWrapper" style="position: relative; width: 100%; background: #000;">
+                <!-- HTML5 Video Player (for non-YouTube videos) -->
+                <video
+                    id="myVideoPlayer"
+                    class="video-js vjs-default-skin vjs-big-play-centered"
+                    controls
+                    preload="auto"
+                    width="100%"
+                    height="600"
+                    data-setup='{}'>
+                    <source src="" type="video/mp4">
+                    <p class="vjs-no-js">
+                        لتشغيل هذا الفيديو، يرجى تفعيل JavaScript والترقية إلى متصفح يدعم HTML5
+                    </p>
+                </video>
+                
+                <!-- YouTube Player (iframe for YouTube videos) -->
+                <div id="youtubePlayerWrapper" style="display: none; position: relative; width: 100%; padding-bottom: 56.25%;">
+                    <iframe id="youtubePlayer"
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
+                        src=""
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Info -->
+        <div class="video-info">
+            <h2 id="videoTitleInfo">عنوان الفيديو</h2>
+            <p id="videoDescription" style="color: #636e72; line-height: 1.6; margin-top: 10px;">لا يوجد وصف</p>
+        </div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="JS/theme.js"></script>
+    <!-- Video.js Library -->
+    <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+    <!-- Video.js YouTube Plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-youtube/3.0.1/Youtube.min.js"></script>
+    
+    <script>
+        let window_player = null;
+        
+        // Get video details from URL parameters
+        function initializeVideo() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const videoId = urlParams.get('video_id');
+            const courseId = urlParams.get('course_id');
+            const videoTitle = decodeURIComponent(urlParams.get('title') || 'الفيديو');
+            const videoUrl = decodeURIComponent(urlParams.get('url') || '');
+            const videoType = urlParams.get('type') || 'url';
+
+            console.log('Video Details:', { videoId, courseId, videoTitle, videoUrl, videoType });
+
+            // Set video title
+            document.getElementById('videoTitle').textContent = videoTitle;
+            document.getElementById('videoTitleInfo').textContent = videoTitle;
+
+            // Prepare video source
+            let videoSource = null;
+            let isYouTube = false;
+            let youtubeVideoId = null;
+            
+            if (videoUrl) {
+                console.log('Processing video URL:', videoUrl);
+                
+                if (videoUrl.includes('youtube.com') || videoUrl.includes('youtu.be')) {
+                    // YouTube URL - use iframe instead
+                    isYouTube = true;
+                    console.log('Detected YouTube URL');
+                    
+                    // Extract video ID
+                    if (videoUrl.includes('youtube.com/watch?v=')) {
+                        youtubeVideoId = videoUrl.split('v=')[1].split('&')[0];
+                    } else if (videoUrl.includes('youtu.be/')) {
+                        youtubeVideoId = videoUrl.split('youtu.be/')[1].split('?')[0];
+                    }
+                    
+                    console.log('YouTube Video ID:', youtubeVideoId);
+                } else {
+                    // All other URLs (external files, uploaded files, etc.)
+                    let source = videoUrl;
+                    let type = 'video/mp4';
+                    
+                    // Determine MIME type by file extension
+                    const ext = videoUrl.split('.').pop().toLowerCase().split('?')[0];
+                    
+                    const mimeTypes = {
+                        'mp4': 'video/mp4',
+                        'webm': 'video/webm',
+                        'ogv': 'video/ogg',
+                        'ogg': 'video/ogg',
+                        'mov': 'video/quicktime',
+                        'mkv': 'video/x-matroska',
+                        'flv': 'video/x-flv',
+                        'avi': 'video/x-msvideo',
+                        'wmv': 'video/x-ms-wmv',
+                        'm3u8': 'application/x-mpegURL'
+                    };
+                    
+                    type = mimeTypes[ext] || 'video/mp4';
+                    console.log('Detected file extension:', ext, 'MIME type:', type);
+                    
+                    videoSource = { src: source, type: type };
+                    console.log('Video source prepared:', videoSource);
+                }
+            } else {
+                console.warn('No video URL provided');
+            }
+
+            // Handle based on video type
+            if (isYouTube && youtubeVideoId) {
+                // YouTube video - use iframe
+                console.log('Loading YouTube video with ID:', youtubeVideoId);
+                
+                // Hide HTML5 player, show YouTube player
+                document.getElementById('myVideoPlayer').style.display = 'none';
+                const youtubeWrapper = document.getElementById('youtubePlayerWrapper');
+                youtubeWrapper.style.display = 'block';
+                
+                // Set YouTube iframe source
+                const youtubePlayer = document.getElementById('youtubePlayer');
+                youtubePlayer.src = `https://www.youtube.com/embed/${youtubeVideoId}?enablejsapi=1`;
+                
+                console.log('YouTube player iframe loaded');
+            } else if (videoSource) {
+                // Regular video file - use Video.js
+                const playerEl = document.getElementById('myVideoPlayer');
+                playerEl.style.display = 'block';
+                document.getElementById('youtubePlayerWrapper').style.display = 'none';
+                
+                window_player = videojs(playerEl, {
+                    controls: true,
+                    autoplay: false,
+                    preload: 'auto',
+                    fluid: true,
+                    playbackRates: [0.5, 1, 1.5, 2]
+                }, function onPlayerReady() {
+                    console.log('Video.js player initialized and ready');
+                    window_player.src(videoSource);
+                    console.log('Video source set:', videoSource);
+                    
+                    // Add error listener
+                    window_player.on('error', function() {
+                        const error = window_player.error();
+                        console.error('❌ Video.js Error:', error);
+                        if (error) {
+                            console.error('  Error code:', error.code);
+                            console.error('  Error message:', error.message);
+                        }
+                    });
+                });
+            } else {
+                console.warn('No valid video source to play');
+            }
+            
+            window.player = window_player;
+
+            // Back button
+            document.getElementById('backButton').addEventListener('click', () => {
+                if (courseId) {
+                    window.location.href = `lesson_page.html?course_id=${courseId}`;
+                } else {
+                    window.location.href = 'dashboard.html';
+                }
+            });
+        }
+
+        // Initialize when DOM is ready
+        document.addEventListener('DOMContentLoaded', () => {
+            // Dark mode persistence
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark') {
+                document.body.classList.add('dark-mode');
+            }
+
+            // Initialize video
+            initializeVideo();
+        });
+    </script>
+
+    <!-- Notification Container -->
+    <div id="notification-container"></div>
+</body>
+</html>

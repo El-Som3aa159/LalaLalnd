@@ -1,0 +1,1445 @@
+/* General Reset & Font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+
+:root {
+    --primary-color: #6c5ce7;
+    --secondary-color: #00b894;
+    --accent-color: #fdcb6e;
+    --bg-color: #f4f4f9;
+    --text-color: #2d3436;
+    --sidebar-bg: #6c5ce7;
+    --card-bg: #ffffff;
+    --sidebar-width: 260px;
+    --sidebar-collapsed-width: 70px;
+    --header-height: 70px;
+}
+
+/* Dark Mode Variables */
+body.dark-mode {
+    --bg-color: #1e1e2e;
+    --text-color: #ffffff;
+    --sidebar-bg: #2d2d44;
+    --card-bg: #2d2d44;
+    --primary-color: #4834d4;
+}
+
+/* User Type Distinction (Placeholders) */
+
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    direction: rtl;
+    transition: background-color 0.3s, color 0.3s;
+    overflow-x: hidden;
+}
+
+/* Layout Container */
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: var(--sidebar-width);
+    background-color: var(--sidebar-bg);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    position: relative;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+/* --- Notification System --- */
+#notification-container {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+    pointer-events: none;
+}
+
+#notification-container > div {
+    pointer-events: auto;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    text-align: center;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 600;
+    animation: slideDown 0.3s ease-out forwards;
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* --- Dark Mode Toggle Fix --- */
+#darkModeToggle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+    border: none;
+    background-color: rgba(0,0,0,0.05);
+}
+body.dark-mode #darkModeToggle {
+    background-color: rgba(255,255,255,0.1);
+    color: #fff;
+}
+#darkModeToggle:hover {
+    transform: scale(1.1);
+}
+
+/* --- Comprehensive Dark Mode Coverage --- */
+body.dark-mode .card,
+body.dark-mode .form-container,
+body.dark-mode .settings-section,
+body.dark-mode .wallet-section,
+body.dark-mode .course-card,
+body.dark-mode .stat-card {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    border: 1px solid #444;
+}
+
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode textarea {
+    background-color: #404058;
+    color: #ffffff;
+    border: 1px solid #555;
+}
+
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder {
+    color: #aaa;
+}
+
+body.dark-mode .table-container {
+    background-color: var(--card-bg);
+}
+
+body.dark-mode table th {
+    background-color: #404058;
+    color: #fff;
+}
+
+body.dark-mode table td {
+    color: #ddd;
+    border-bottom: 1px solid #444;
+
+    z-index: 100;
+    overflow: hidden;
+}
+
+.sidebar.closed {
+    width: var(--sidebar-collapsed-width);
+}
+
+.sidebar-header h2 {
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: 700;
+    white-space: nowrap;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.sidebar.closed .sidebar-header h2 {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.sidebar nav ul {
+    list-style: none;
+}
+
+.sidebar nav ul li {
+    margin-bottom: 15px;
+}
+
+/* Draggable Navigation Items */
+.sidebar nav ul li {
+    cursor: grab;
+    transition: all 0.2s ease;
+}
+
+.sidebar nav ul li:hover {
+    cursor: grab;
+    transform: translateX(-3px);
+}
+
+.sidebar nav ul li.ui-sortable-helper {
+    opacity: 0.8;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+    transform: scale(1.02);
+    z-index: 1000;
+}
+
+.sidebar nav ul li.nav-placeholder {
+    background-color: rgba(255,255,255,0.1);
+    border: 2px dashed rgba(255,255,255,0.5);
+    border-radius: 5px;
+    opacity: 0.5;
+    height: 0;
+    margin-bottom: 0;
+    padding: 0;
+    min-height: 0;
+}
+
+.sidebar nav ul li.ui-sortable-helper a {
+    pointer-events: none;
+}
+
+.sidebar nav ul li a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+/* When sidebar is closed, center the icon and make the hover area smaller/square */
+.sidebar.closed nav ul li a {
+    justify-content: center;
+    padding: 10px;
+    width: 50px; /* Fixed width for icon-only mode */
+    margin: 0 auto; /* Center in the sidebar */
+}
+
+.sidebar nav ul li a:hover,
+.sidebar nav ul li a.active {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+.sidebar nav ul li a span {
+    margin-right: 10px;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.sidebar.closed nav ul li a span {
+    opacity: 0;
+    width: 0;
+    display: none;
+}
+
+.logout-item {
+    margin-top: auto;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    padding-top: 15px;
+}
+
+/* Main Content Styling */
+.main-content {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 30px;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.sidebar.closed ~ .main-content {
+    /* closed state handled by sidebar width change */
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    background: var(--card-bg);
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.balance-badge {
+    background: #ffeaa7;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: #d35400;
+    font-size: 0.9rem;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    background-color: #dfe6e9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.avatar:hover {
+    transform: scale(1.1);
+}
+
+.btn-toggle {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* Sections */
+.content-section {
+    animation: fadeIn 0.5s ease;
+}
+
+.content-section h2 {
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+/* Draggable Section Styling */
+.draggable-section {
+    cursor: grab;
+    transition: box-shadow 0.2s;
+}
+
+.draggable-section h2 {
+    cursor: grab;
+    user-select: none;
+    padding: 5px;
+    margin-left: -5px;
+    margin-right: -5px;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+.draggable-section h2:hover {
+    background-color: rgba(108, 92, 231, 0.1);
+}
+
+.draggable-section.ui-draggable-dragging {
+    opacity: 0.8;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Settings Grid */
+.settings-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 100%;
+    width: 100%;
+    padding: 20px 0;
+    margin: 0 auto;
+}
+
+.settings-grid::-webkit-scrollbar {
+    height: 6px;
+}
+
+.settings-grid::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.settings-grid::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.settings-grid::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+body.dark-mode .settings-grid::-webkit-scrollbar-track {
+    background: #404058;
+}
+
+.settings-card {
+    background: var(--card-bg);
+    padding: 25px;
+    border-radius: 15px;
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.settings-card:hover {
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    transform: translateY(-2px);
+}
+
+.settings-card.danger-card {
+    border-color: #d63031;
+    background: linear-gradient(135deg, var(--card-bg) 0%, rgba(214, 48, 49, 0.05) 100%);
+}
+
+.settings-card.coming-soon-card {
+    border-color: #b2bec3;
+    border-style: dashed;
+    opacity: 0.8;
+}
+
+.settings-card h3 {
+    margin-bottom: 20px;
+    color: var(--text-color);
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dfe6e9;
+    border-radius: 5px;
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.btn-save, .btn-action {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+}
+
+.btn-action {
+    background: var(--secondary-color);
+}
+
+.btn-danger {
+    background-color: #d63031 !important;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-danger:hover {
+    background-color: #b8221f !important;
+}
+
+body.dark-mode .btn-danger {
+    background-color: #d63031 !important;
+}
+
+.danger-card {
+    border-color: #d63031;
+}
+
+.link-coming-soon {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Progress Bar */
+.progress-overview {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.progress-container {
+    background-color: #dfe6e9;
+    border-radius: 20px;
+    height: 25px;
+    width: 100%;
+    margin: 15px 0;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background-color: var(--secondary-color);
+    height: 100%;
+    color: white;
+    text-align: center;
+    line-height: 25px;
+    font-size: 0.9rem;
+    border-radius: 20px;
+}
+
+/* Cards Grid - Horizontal scroll for courses */
+.courses-grid, .teachers-list {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    scroll-behavior: smooth;
+}
+
+.courses-grid::-webkit-scrollbar,
+.teachers-list::-webkit-scrollbar {
+    height: 6px;
+}
+
+.courses-grid::-webkit-scrollbar-track,
+.teachers-list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.courses-grid::-webkit-scrollbar-thumb,
+.teachers-list::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.courses-grid::-webkit-scrollbar-thumb:hover,
+.teachers-list::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+body.dark-mode .courses-grid::-webkit-scrollbar-track,
+body.dark-mode .teachers-list::-webkit-scrollbar-track {
+    background: #404058;
+}
+
+body.dark-mode .courses-grid::-webkit-scrollbar-thumb,
+body.dark-mode .teachers-list::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+.course-card, .teacher-card {
+    background: var(--card-bg);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    min-width: 220px;
+    flex-shrink: 0;
+}
+
+.course-card:hover, .teacher-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.card-img {
+    height: 150px;
+    background-color: #b2bec3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.card-body {
+    padding: 15px;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body h3, 
+.card-body h4 {
+    margin: 0 0 10px 0;
+    color: var(--text-color);
+}
+
+.card-body p {
+    margin: 5px 0;
+    flex-grow: 1;
+}
+
+.teacher-card {
+    padding: 15px;
+    text-align: center;
+}
+
+.teacher-avatar {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+/* Buttons */
+button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Cairo', sans-serif;
+    margin-top: 10px;
+}
+
+.btn-continue {
+    background-color: var(--primary-color);
+    color: white;
+    width: 100%;
+}
+
+.btn-enroll {
+    background-color: var(--secondary-color);
+    color: white;
+    width: 100%;
+}
+
+.btn-enrolled {
+    background-color: #a8a8a8;
+    color: white;
+    width: 100%;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.btn-enroll:hover:not(:disabled) {
+    background-color: #00a082;
+}
+
+.btn-outline {
+    border: 1px solid var(--primary-color);
+    background: transparent;
+    color: var(--primary-color);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- Dark Mode for Course Details & Teacher Forms --- */
+body.dark-mode .details-container,
+body.dark-mode .sidebar-info,
+body.dark-mode .teacher-card-small {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    border-color: #444;
+}
+
+body.dark-mode .info-section h2 {
+    color: #fff;
+    border-bottom-color: #444;
+}
+
+body.dark-mode .info-section p {
+    color: #b2bec3;
+}
+
+body.dark-mode .teacher-card-small {
+    background-color: #2d2d44;
+    border: 1px solid #444;
+}
+
+body.dark-mode .teacher-img {
+    background-color: #404058;
+    color: #fff;
+}
+
+body.dark-mode .price-tag {
+    color: #55efc4;
+}
+
+/* Ensure Teacher "Add Course" Form is Dark */
+body.dark-mode .form-container {
+    background-color: var(--card-bg) !important;
+    color: var(--text-color) !important;
+    border: 1px solid #444 !important;
+}
+
+body.dark-mode .form-container h3 {
+    color: var(--text-main) !important;
+}
+
+body.dark-mode .form-container p {
+    color: var(--text-secondary) !important;
+}
+
+body.dark-mode .form-container textarea {
+    background-color: #404058 !important;
+    color: var(--text-main) !important;
+    border-color: #555 !important;
+}
+
+body.dark-mode .form-container textarea::placeholder {
+    color: #aaa !important;
+}
+
+body.dark-mode .form-container label {
+    color: var(--text-main) !important;
+}
+
+body.dark-mode .form-container input {
+    background-color: #404058 !important;
+    color: var(--text-main) !important;
+    border-color: #555 !important;
+}
+
+body.dark-mode .form-container input::placeholder {
+    color: #aaa !important;
+}
+
+/* Special Dark Mode for Bio Card */
+body.dark-mode .form-container.bio-card {
+    background: linear-gradient(135deg, var(--card-bg) 0%, rgba(108, 92, 231, 0.1) 100%) !important;
+    border-color: #6c5ce7 !important;
+}
+
+/* Special Dark Mode for Danger Card */
+body.dark-mode .form-container.danger-card {
+    background: linear-gradient(135deg, var(--card-bg) 0%, rgba(214, 48, 49, 0.15) 100%) !important;
+    border-color: #e74c3c !important;
+}
+
+body.dark-mode .form-container.danger-card p {
+    color: #ff6b6b !important;
+}
+
+/* Special Dark Mode for Coming Soon Card */
+body.dark-mode .form-container.coming-soon-card {
+    border-color: #555 !important;
+}
+
+body.dark-mode .form-group label {
+    color: #fff;
+}
+
+/* --- Watch Video Page Dark Mode --- */
+body.dark-mode .video-container {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+body.dark-mode .video-header h1 {
+    color: #fff;
+}
+
+body.dark-mode .video-header p {
+    color: #b2bec3;
+}
+
+body.dark-mode .video-header {
+    border-bottom-color: #444;
+}
+
+body.dark-mode .video-player-wrapper {
+    background-color: #000;
+    border: 1px solid #444;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .sidebar {
+        width: var(--sidebar-collapsed-width);
+    }
+    .sidebar-header h2, .sidebar nav ul li a span {
+        display: none;
+    }
+    .main-content {
+        margin-right: var(--sidebar-collapsed-width);
+        width: calc(100% - var(--sidebar-collapsed-width));
+    }
+}
+
+
+/* --- Video Player Base Styles (Moved from watch_video.html) --- */
+.video-container {
+    max-width: 1000px;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.video-header {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #f0f2f5;
+    padding-bottom: 15px;
+}
+
+.video-header h1 {
+    color: #2d3436;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.video-player-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    background: #000;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.video-player-wrapper iframe, 
+.video-player-wrapper video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.video-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.btn-back-course {
+    background: #6c5ce7;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.2s;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.btn-back-course:hover {
+    transform: translateX(-5px);
+}
+
+.error-message {
+    background: #ffeaa7;
+    color: #d35400;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+/* --- Teacher Dashboard Dynamic Content (Dark Mode) --- */
+body.dark-mode .section-item {
+    background-color: var(--card-bg);
+    border: 1px solid #444;
+    color: var(--text-color);
+}
+
+body.dark-mode .section-item h4 {
+    color: #fff;
+}
+
+body.dark-mode .lessons-list div {
+    background-color: #2d2d44 !important; /* Override inline style */
+    color: #fff;
+    border: 1px solid #444;
+}
+
+body.dark-mode .section-item input[type="text"],
+body.dark-mode .section-item input[type="url"] {
+    background-color: #2d2d44;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+body.dark-mode .section-item input[type="text"]::placeholder,
+body.dark-mode .section-item input[type="url"]::placeholder {
+    color: #b2bec3;
+}
+
+body.dark-mode .section-item label {
+    color: #fff;
+}
+
+/* Ensure buttons are visible */
+body.dark-mode .section-item button {
+    opacity: 0.9;
+}
+
+body.dark-mode .section-item button:hover {
+    opacity: 1;
+}
+
+/* --- Teacher Dashboard Content Editor (Dynamic) --- */
+.section-item {
+    border: 2px solid var(--primary-color);
+    margin-bottom: 20px;
+    background: var(--card-bg);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    background: #eee;
+    padding: 10px;
+    color: var(--text-color);
+}
+
+.subsection-item {
+    background: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.subsection-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+    color: var(--text-color);
+}
+
+.video-item {
+    background: white;
+    padding: 8px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #eee;
+    color: var(--text-color);
+}
+
+.add-subsection-form {
+    padding: 10px;
+    background: #f0f0f0;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.add-video-form {
+    margin-top: 10px; 
+    padding-top: 10px; 
+    border-top: 1px dashed #ccc;
+}
+
+/* Dark Mode Overrides for Dynamic Content */
+body.dark-mode .section-item {
+    background: var(--card-bg);
+    border-color: #444;
+}
+
+body.dark-mode .section-header {
+    background: #404058;
+    color: #fff;
+}
+
+body.dark-mode .subsection-item {
+    background: #2d2d44;
+    border-color: #444;
+}
+
+body.dark-mode .subsection-header {
+    border-bottom-color: #444;
+    color: #fff;
+}
+
+body.dark-mode .video-item {
+    background: #404058;
+    border-color: #555;
+    color: #fff;
+}
+
+body.dark-mode .add-subsection-form {
+    background: #2d2d44;
+    border: 1px solid #444;
+}
+
+body.dark-mode .add-video-form {
+    border-top-color: #555;
+}
+
+body.dark-mode .section-item h3,
+body.dark-mode .section-item h4,
+body.dark-mode .section-item span {
+    color: #fff !important;
+}
+
+
+/* --- Course Content Styling (Student View) --- */
+.content-item {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.content-header {
+    background: #f8f9fa;
+    padding: 15px;
+    font-weight: bold;
+    border-bottom: 1px solid #eee;
+    color: var(--text-color);
+}
+
+.content-body {
+    padding: 0 15px;
+}
+
+.video-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #f1f1f1;
+    color: var(--text-color);
+}
+
+.sub-section {
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #eee;
+    padding-bottom: 5px;
+}
+
+.sub-section-title {
+    margin: 10px 15px;
+    color: var(--primary-color);
+    font-size: 1rem;
+}
+
+.sub-video-item {
+    padding-right: 15px;
+}
+
+.no-content-msg, .no-videos-msg {
+    padding: 10px;
+    color: #999;
+    font-size: 0.9rem;
+}
+
+.video-link {
+    text-decoration: none;
+    color: var(--text-color);
+    flex-grow: 1;
+    margin: 0 10px;
+    transition: color 0.2s;
+}
+
+.video-link:hover {
+    color: var(--primary-color);
+}
+
+.video-link.locked {
+    color: #b2bec3;
+    cursor: not-allowed;
+}
+
+/* --- Dark Mode for Course Content --- */
+body.dark-mode .content-item {
+    background: var(--card-bg);
+    border-color: #444;
+}
+
+body.dark-mode .content-header {
+    background: #404058;
+    border-bottom-color: #444;
+    color: #fff;
+}
+
+body.dark-mode .video-item {
+    border-bottom-color: #444;
+    color: #fff;
+}
+
+body.dark-mode .sub-section {
+    border-bottom-color: #444;
+}
+
+body.dark-mode .sub-section-title {
+    color: #a29bfe;
+}
+
+body.dark-mode .video-link {
+    color: #fff;
+}
+
+body.dark-mode .video-link:hover {
+    color: #a29bfe;
+}
+
+body.dark-mode .video-link.locked {
+    color: #636e72;
+}
+
+body.dark-mode .no-content-msg, 
+body.dark-mode .no-videos-msg {
+    color: #b2bec3;
+}
+
+/* ============================================ */
+/* POMODORO TIMER STYLES */
+/* ============================================ */
+
+.timer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 12px;
+    color: white;
+}
+
+.timer-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.time-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.timer-input-field {
+    width: 80px;
+    height: 70px;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 5px;
+    font-family: 'Courier New', monospace;
+}
+
+.timer-input-field:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.timer-input-field::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.time-separator {
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Large Timer Container for Main Section */
+.timer-container-large {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 40px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 20px;
+    color: white;
+    min-height: 600px;
+    width: 100%;
+}
+
+.timer-display-large {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.time-input-large {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 120px;
+    font-weight: bold;
+}
+
+.timer-input-field-large {
+    width: 180px;
+    height: 200px;
+    font-size: 120px;
+    font-weight: bold;
+    text-align: center;
+    border: 4px solid white;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    padding: 10px;
+    font-family: 'Courier New', monospace;
+    transition: background 0.2s;
+}
+
+.timer-input-field-large:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+}
+
+.timer-input-field-large::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.time-separator-large {
+    font-size: 120px;
+    font-weight: bold;
+    color: white;
+    line-height: 1;
+}
+
+.timer-display-text-large {
+    font-size: 100px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    font-family: 'Courier New', monospace;
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timer-controls-large {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    width: 100%;
+}
+
+.btn-timer-control-large {
+    padding: 20px 50px;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-timer-control-large.btn-start {
+    background: #00b894;
+}
+
+.btn-timer-control-large.btn-start:hover {
+    background: #00a383;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 184, 148, 0.4);
+}
+
+.btn-timer-control-large.btn-reset {
+    background: #d63031;
+}
+
+.btn-timer-control-large.btn-reset:hover {
+    background: #c92a2a;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(214, 48, 49, 0.4);
+}
+
+.timer-status-large {
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9);
+    margin-top: 20px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Dark Mode for Large Timer */
+body.dark-mode .timer-container-large {
+    background: linear-gradient(135deg, #2d3561 0%, #1a1f3a 100%);
+}
+
+
+.timer-display-text {
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'Courier New', monospace;
+    min-width: 150px;
+    text-align: center;
+}
+
+.timer-controls {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+.btn-timer-control {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Cairo', sans-serif;
+    color: white;
+}
+
+.btn-start {
+    background-color: #00b894;
+}
+
+.btn-start:hover {
+    background-color: #00a383;
+    transform: scale(1.05);
+}
+
+.btn-start.running {
+    background-color: #d63031;
+}
+
+.btn-start.running:hover {
+    background-color: #b82020;
+}
+
+.btn-reset {
+    background-color: #74b9ff;
+}
+
+.btn-reset:hover {
+    background-color: #5a9fd4;
+    transform: scale(1.05);
+}
+
+.timer-status {
+    font-size: 14px;
+    text-align: center;
+    font-style: italic;
+    margin-top: 10px;
+    opacity: 0.9;
+}
+
+/* ============================================ */
+/* DRAGGABLE CARDS STYLES */
+/* ============================================ */
+
+#settingsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+}
+
+.draggable-card {
+    cursor: move;
+    position: relative;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.draggable-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border-color: var(--primary-color);
+}
+
+.draggable-card.ui-sortable-helper {
+    opacity: 0.9;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+}
+
+.draggable-card.ui-sortable-placeholder {
+    background: rgba(108, 92, 231, 0.1);
+    border: 2px dashed var(--primary-color);
+    opacity: 0.5;
+}
+
+/* Dark mode adjustments */
+body.dark-mode .timer-container {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+body.dark-mode .draggable-card:hover {
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.15);
+}
+
+
