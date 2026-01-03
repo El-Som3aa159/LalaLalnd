@@ -2565,3 +2565,55 @@
 [03-Jan-2026 13:51:26 Europe/Berlin] Session user_role: not set
 [03-Jan-2026 13:51:26 Europe/Berlin] POST teacher_id: not set
 [03-Jan-2026 13:51:26 Europe/Berlin] No user_id found - unauthorized
+[03-Jan-2026 14:52:13 Europe/Berlin] Courses API called - Action: get_courses
+[03-Jan-2026 14:52:13 Europe/Berlin] Session user_id: not set
+[03-Jan-2026 14:52:13 Europe/Berlin] Session user_role: not set
+[03-Jan-2026 14:52:13 Europe/Berlin] POST teacher_id: not set
+[03-Jan-2026 14:52:13 Europe/Berlin] No user_id found - unauthorized
+[03-Jan-2026 14:53:24 Europe/Berlin] Courses API called - Action: get_courses
+[03-Jan-2026 14:53:24 Europe/Berlin] Session user_id: not set
+[03-Jan-2026 14:53:24 Europe/Berlin] Session user_role: not set
+[03-Jan-2026 14:53:24 Europe/Berlin] POST teacher_id: not set
+[03-Jan-2026 14:53:24 Europe/Berlin] No user_id found - unauthorized
+[03-Jan-2026 14:54:06 Europe/Berlin] Courses API called - Action: get_courses
+[03-Jan-2026 14:54:06 Europe/Berlin] Session user_id: not set
+[03-Jan-2026 14:54:06 Europe/Berlin] Session user_role: not set
+[03-Jan-2026 14:54:06 Europe/Berlin] POST teacher_id: not set
+[03-Jan-2026 14:54:06 Europe/Berlin] No user_id found - unauthorized
+[03-Jan-2026 14:57:11 Europe/Berlin] Courses API called - Action: get_courses
+[03-Jan-2026 14:57:11 Europe/Berlin] Session user_id: not set
+[03-Jan-2026 14:57:11 Europe/Berlin] Session user_role: not set
+[03-Jan-2026 14:57:11 Europe/Berlin] POST teacher_id: 19
+[03-Jan-2026 14:57:11 Europe/Berlin] teacher_id from POST: 19
+[03-Jan-2026 14:57:11 Europe/Berlin] Teacher check query result rows: 1
+[03-Jan-2026 14:57:11 Europe/Berlin] Teacher ID 19 found in database
+[03-Jan-2026 14:57:11 Europe/Berlin] Authentication successful - User 19 is teacher
+[03-Jan-2026 14:59:19 Europe/Berlin] Courses API called - Action: create_course
+[03-Jan-2026 14:59:19 Europe/Berlin] Session user_id: not set
+[03-Jan-2026 14:59:19 Europe/Berlin] Session user_role: not set
+[03-Jan-2026 14:59:19 Europe/Berlin] POST teacher_id: 19
+[03-Jan-2026 14:59:19 Europe/Berlin] teacher_id from POST: 19
+[03-Jan-2026 14:59:19 Europe/Berlin] Teacher check query result rows: 1
+[03-Jan-2026 14:59:19 Europe/Berlin] Teacher ID 19 found in database
+[03-Jan-2026 14:59:19 Europe/Berlin] Authentication successful - User 19 is teacher
+[03-Jan-2026 14:59:19 Europe/Berlin] createCourse called with userId: 19
+[03-Jan-2026 14:59:19 Europe/Berlin] Course data - Title: مراجعة الباب الأول, Subtitle: مراجعة الباب الأول للشجعان, Price: 200, Color: #6c5ce7
+[03-Jan-2026 14:59:19 Europe/Berlin] Wallpaper uploaded successfully to: uploads/wallpapers/wallpaper_695920b7c1afe.jpg
+[03-Jan-2026 14:59:19 Europe/Berlin] Generated course code: COURSE_1767448759_3301
+[03-Jan-2026 14:59:19 Europe/Berlin] Preparing SQL: INSERT INTO courses (course_code, title, subtitle, description, teacher_id, price, image_color, wallpaper, created_at) 
+              VALUES (?, ?, ?, ?, ?, ?, ?, ?, NOW())
+[03-Jan-2026 14:59:19 Europe/Berlin] Binding parameters: s(code), s, s, s, i, d, s, s
+[03-Jan-2026 14:59:19 Europe/Berlin] Course created successfully with ID: 34, Wallpaper: PHP/uploads/wallpapers/wallpaper_695920b7c1afe.jpg
+[03-Jan-2026 14:59:19 Europe/Berlin] Courses API called - Action: get_courses
+[03-Jan-2026 14:59:19 Europe/Berlin] Session user_id: not set
+[03-Jan-2026 14:59:19 Europe/Berlin] Session user_role: not set
+[03-Jan-2026 14:59:19 Europe/Berlin] POST teacher_id: 19
+[03-Jan-2026 14:59:19 Europe/Berlin] teacher_id from POST: 19
+[03-Jan-2026 14:59:19 Europe/Berlin] Teacher check query result rows: 1
+[03-Jan-2026 14:59:19 Europe/Berlin] Teacher ID 19 found in database
+[03-Jan-2026 14:59:19 Europe/Berlin] Authentication successful - User 19 is teacher
+[03-Jan-2026 15:01:04 Europe/Berlin] Courses API called - Action: get_courses
+[03-Jan-2026 15:01:04 Europe/Berlin] Session user_id: not set
+[03-Jan-2026 15:01:04 Europe/Berlin] Session user_role: not set
+[03-Jan-2026 15:01:04 Europe/Berlin] POST teacher_id: not set
+[03-Jan-2026 15:01:04 Europe/Berlin] No user_id found - unauthorized

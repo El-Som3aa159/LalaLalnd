@@ -363,3 +363,53 @@
 [03-Jan-2026 13:38:36 Europe/Berlin] Course Content API called - Action: get_course_content
 [03-Jan-2026 13:38:36 Europe/Berlin] Session user_id: not set
 [03-Jan-2026 13:38:36 Europe/Berlin] POST teacher_id: not set
+[03-Jan-2026 14:53:30 Europe/Berlin] Course Content API called - Action: get_course_content
+[03-Jan-2026 14:53:30 Europe/Berlin] Session user_id: not set
+[03-Jan-2026 14:53:30 Europe/Berlin] POST teacher_id: not set
+[03-Jan-2026 14:54:00 Europe/Berlin] Course Content API called - Action: get_course_content
+[03-Jan-2026 14:54:00 Europe/Berlin] Session user_id: not set
+[03-Jan-2026 14:54:00 Europe/Berlin] POST teacher_id: not set
+[03-Jan-2026 14:59:25 Europe/Berlin] Course Content API called - Action: get_course_content
+[03-Jan-2026 14:59:25 Europe/Berlin] Session user_id: not set
+[03-Jan-2026 14:59:25 Europe/Berlin] POST teacher_id: 19
+[03-Jan-2026 14:59:25 Europe/Berlin] teacher_id from POST: 19
+[03-Jan-2026 14:59:28 Europe/Berlin] Course Content API called - Action: add_section
+[03-Jan-2026 14:59:28 Europe/Berlin] Session user_id: not set
+[03-Jan-2026 14:59:28 Europe/Berlin] POST teacher_id: 19
+[03-Jan-2026 14:59:28 Europe/Berlin] teacher_id from POST: 19
+[03-Jan-2026 14:59:28 Europe/Berlin] Course Content API called - Action: get_course_content
+[03-Jan-2026 14:59:28 Europe/Berlin] Session user_id: not set
+[03-Jan-2026 14:59:28 Europe/Berlin] POST teacher_id: 19
+[03-Jan-2026 14:59:28 Europe/Berlin] teacher_id from POST: 19
+[03-Jan-2026 14:59:46 Europe/Berlin] Course Content API called - Action: add_subsection
+[03-Jan-2026 14:59:46 Europe/Berlin] Session user_id: not set
+[03-Jan-2026 14:59:46 Europe/Berlin] POST teacher_id: 19
+[03-Jan-2026 14:59:46 Europe/Berlin] teacher_id from POST: 19
+[03-Jan-2026 14:59:46 Europe/Berlin] Course Content API called - Action: get_course_content
+[03-Jan-2026 14:59:46 Europe/Berlin] Session user_id: not set
+[03-Jan-2026 14:59:46 Europe/Berlin] POST teacher_id: 19
+[03-Jan-2026 14:59:46 Europe/Berlin] teacher_id from POST: 19
+[03-Jan-2026 14:59:54 Europe/Berlin] Course Content API called - Action: delete_section
+[03-Jan-2026 14:59:54 Europe/Berlin] Session user_id: not set
+[03-Jan-2026 14:59:54 Europe/Berlin] POST teacher_id: 19
+[03-Jan-2026 14:59:54 Europe/Berlin] teacher_id from POST: 19
+[03-Jan-2026 14:59:54 Europe/Berlin] Course Content API called - Action: get_course_content
+[03-Jan-2026 14:59:54 Europe/Berlin] Session user_id: not set
+[03-Jan-2026 14:59:54 Europe/Berlin] POST teacher_id: 19
+[03-Jan-2026 14:59:54 Europe/Berlin] teacher_id from POST: 19
+[03-Jan-2026 15:00:12 Europe/Berlin] Course Content API called - Action: add_section
+[03-Jan-2026 15:00:12 Europe/Berlin] Session user_id: not set
+[03-Jan-2026 15:00:12 Europe/Berlin] POST teacher_id: 19
+[03-Jan-2026 15:00:12 Europe/Berlin] teacher_id from POST: 19
+[03-Jan-2026 15:00:12 Europe/Berlin] Course Content API called - Action: get_course_content
+[03-Jan-2026 15:00:12 Europe/Berlin] Session user_id: not set
+[03-Jan-2026 15:00:12 Europe/Berlin] POST teacher_id: 19
+[03-Jan-2026 15:00:12 Europe/Berlin] teacher_id from POST: 19
+[03-Jan-2026 15:00:16 Europe/Berlin] Course Content API called - Action: add_subsection
+[03-Jan-2026 15:00:16 Europe/Berlin] Session user_id: not set
+[03-Jan-2026 15:00:16 Europe/Berlin] POST teacher_id: 19
+[03-Jan-2026 15:00:16 Europe/Berlin] teacher_id from POST: 19
+[03-Jan-2026 15:00:16 Europe/Berlin] Course Content API called - Action: get_course_content
+[03-Jan-2026 15:00:16 Europe/Berlin] Session user_id: not set
+[03-Jan-2026 15:00:16 Europe/Berlin] POST teacher_id: 19
+[03-Jan-2026 15:00:16 Europe/Berlin] teacher_id from POST: 19

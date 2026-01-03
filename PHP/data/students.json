@@ -12,5 +12,12 @@
         "password_hash": "$2y$10$6uzkpesN0YBnWwpAfF9UTOF4hOax3ZZ8SrLhpA313wv\/PNVkWho1y",
         "grade": "2",
         "created_at": "2026-01-03 13:50:51"
+    },
+    "mohamed.ali@gmail.com": {
+        "full_name": "محمد علي",
+        "email": "mohamed.ali@gmail.com",
+        "password_hash": "$2y$10$S4iDfUxPk7gziY7PaXcqlu6wYW5HAQlT7p9G8D\/Oin6EkeSvf1W7q",
+        "grade": "2",
+        "created_at": "2026-01-03 14:51:01"
     }
 }
