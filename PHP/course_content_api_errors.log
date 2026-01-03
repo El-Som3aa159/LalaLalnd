@@ -357,3 +357,9 @@
 [02-Jan-2026 23:16:56 Europe/Berlin] Session user_id: not set
 [02-Jan-2026 23:16:56 Europe/Berlin] POST teacher_id: 11
 [02-Jan-2026 23:16:56 Europe/Berlin] teacher_id from POST: 11
+[03-Jan-2026 13:38:32 Europe/Berlin] Course Content API called - Action: get_course_content
+[03-Jan-2026 13:38:32 Europe/Berlin] Session user_id: not set
+[03-Jan-2026 13:38:32 Europe/Berlin] POST teacher_id: not set
+[03-Jan-2026 13:38:36 Europe/Berlin] Course Content API called - Action: get_course_content
+[03-Jan-2026 13:38:36 Europe/Berlin] Session user_id: not set
+[03-Jan-2026 13:38:36 Europe/Berlin] POST teacher_id: not set

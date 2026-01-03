@@ -30,6 +30,12 @@ if ($method === 'POST') {
             case 'get_student_data':
                 getStudentData($conn, $data);
                 break;
+            case 'get_student_balance':
+                getStudentBalance($conn, $data);
+                break;
+            case 'update_student_balance':
+                updateStudentBalance($conn, $data);
+                break;
             case 'get_teacher_data':
                 getTeacherData($conn, $data);
                 break;
@@ -69,7 +75,7 @@ function getStudentData($conn, $data) {
         return;
     }
 
-    $stmt = $conn->prepare("SELECT id, full_name, email, grade FROM students WHERE id = ?");
+    $stmt = $conn->prepare("SELECT id, full_name, email, grade, balance FROM students WHERE id = ?");
     if (!$stmt) {
         http_response_code(500);
         echo json_encode(['success' => false, 'message' => 'خطأ في قاعدة البيانات: ' . $conn->error]);
@@ -87,6 +93,100 @@ function getStudentData($conn, $data) {
 
     $student = $result->fetch_assoc();
     echo json_encode(['success' => true, 'student' => $student]);
+    $stmt->close();
+}
+
+function getStudentBalance($conn, $data) {
+    $student_id = $data['student_id'] ?? 0;
+    
+    if (empty($student_id)) {
+        echo json_encode(['success' => false, 'message' => 'Student ID required']);
+        return;
+    }
+
+    $stmt = $conn->prepare("SELECT balance FROM students WHERE id = ?");
+    if (!$stmt) {
+        http_response_code(500);
+        echo json_encode(['success' => false, 'message' => 'خطأ في قاعدة البيانات: ' . $conn->error]);
+        return;
+    }
+
+    $stmt->bind_param("i", $student_id);
+    $stmt->execute();
+    $result = $stmt->get_result();
+
+    if ($result->num_rows === 0) {
+        echo json_encode(['success' => false, 'message' => 'Student not found']);
+        return;
+    }
+
+    $student = $result->fetch_assoc();
+    $balance = floatval($student['balance'] ?? 0);
+    echo json_encode(['success' => true, 'balance' => $balance]);
+    $stmt->close();
+}
+
+function updateStudentBalance($conn, $data) {
+    $student_id = $data['student_id'] ?? 0;
+    $new_balance = $data['balance'] ?? null;
+    $amount_to_add = $data['amount'] ?? null;
+    
+    if (empty($student_id)) {
+        echo json_encode(['success' => false, 'message' => 'Student ID required']);
+        return;
+    }
+    
+    // Check if we're setting absolute balance or adding amount
+    if ($new_balance === null && $amount_to_add === null) {
+        echo json_encode(['success' => false, 'message' => 'Balance or amount required']);
+        return;
+    }
+    
+    // Get current balance if adding
+    if ($amount_to_add !== null) {
+        $stmt = $conn->prepare("SELECT balance FROM students WHERE id = ?");
+        $stmt->bind_param("i", $student_id);
+        $stmt->execute();
+        $result = $stmt->get_result();
+        
+        if ($result->num_rows === 0) {
+            echo json_encode(['success' => false, 'message' => 'Student not found']);
+            return;
+        }
+        
+        $student = $result->fetch_assoc();
+        $new_balance = floatval($student['balance'] ?? 0) + floatval($amount_to_add);
+        $stmt->close();
+    } else {
+        $new_balance = floatval($new_balance);
+    }
+    
+    // Ensure balance is not negative
+    if ($new_balance < 0) {
+        $new_balance = 0;
+    }
+    
+    // Update balance in database
+    $stmt = $conn->prepare("UPDATE students SET balance = ? WHERE id = ?");
+    if (!$stmt) {
+        http_response_code(500);
+        echo json_encode(['success' => false, 'message' => 'Database error: ' . $conn->error]);
+        return;
+    }
+    
+    $stmt->bind_param("di", $new_balance, $student_id);
+    
+    if ($stmt->execute()) {
+        echo json_encode([
+            'success' => true,
+            'message' => 'Balance updated successfully',
+            'balance' => $new_balance
+        ]);
+    } else {
+        http_response_code(500);
+        echo json_encode(['success' => false, 'message' => 'Failed to update balance']);
+    }
+    
     $stmt->close();
 }
 

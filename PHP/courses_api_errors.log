@@ -2435,3 +2435,133 @@
 [02-Jan-2026 23:18:12 Europe/Berlin] Teacher check query result rows: 1
 [02-Jan-2026 23:18:12 Europe/Berlin] Teacher ID 14 found in database
 [02-Jan-2026 23:18:12 Europe/Berlin] Authentication successful - User 14 is teacher
+[03-Jan-2026 13:22:42 Europe/Berlin] Courses API called - Action: get_courses
+[03-Jan-2026 13:22:42 Europe/Berlin] Session user_id: not set
+[03-Jan-2026 13:22:42 Europe/Berlin] Session user_role: not set
+[03-Jan-2026 13:22:42 Europe/Berlin] POST teacher_id: not set
+[03-Jan-2026 13:22:42 Europe/Berlin] No user_id found - unauthorized
+[03-Jan-2026 13:28:13 Europe/Berlin] Courses API called - Action: get_courses
+[03-Jan-2026 13:28:13 Europe/Berlin] Session user_id: not set
+[03-Jan-2026 13:28:13 Europe/Berlin] Session user_role: not set
+[03-Jan-2026 13:28:13 Europe/Berlin] POST teacher_id: not set
+[03-Jan-2026 13:28:13 Europe/Berlin] No user_id found - unauthorized
+[03-Jan-2026 13:28:14 Europe/Berlin] Courses API called - Action: get_courses
+[03-Jan-2026 13:28:14 Europe/Berlin] Session user_id: not set
+[03-Jan-2026 13:28:14 Europe/Berlin] Session user_role: not set
+[03-Jan-2026 13:28:14 Europe/Berlin] POST teacher_id: not set
+[03-Jan-2026 13:28:14 Europe/Berlin] No user_id found - unauthorized
+[03-Jan-2026 13:28:32 Europe/Berlin] Courses API called - Action: get_courses
+[03-Jan-2026 13:28:32 Europe/Berlin] Session user_id: not set
+[03-Jan-2026 13:28:32 Europe/Berlin] Session user_role: not set
+[03-Jan-2026 13:28:32 Europe/Berlin] POST teacher_id: not set
+[03-Jan-2026 13:28:32 Europe/Berlin] No user_id found - unauthorized
+[03-Jan-2026 13:28:48 Europe/Berlin] Courses API called - Action: get_courses
+[03-Jan-2026 13:28:48 Europe/Berlin] Session user_id: not set
+[03-Jan-2026 13:28:48 Europe/Berlin] Session user_role: not set
+[03-Jan-2026 13:28:48 Europe/Berlin] POST teacher_id: not set
+[03-Jan-2026 13:28:48 Europe/Berlin] No user_id found - unauthorized
+[03-Jan-2026 13:32:16 Europe/Berlin] Courses API called - Action: get_courses
+[03-Jan-2026 13:32:16 Europe/Berlin] Session user_id: not set
+[03-Jan-2026 13:32:16 Europe/Berlin] Session user_role: not set
+[03-Jan-2026 13:32:16 Europe/Berlin] POST teacher_id: not set
+[03-Jan-2026 13:32:16 Europe/Berlin] No user_id found - unauthorized
+[03-Jan-2026 13:38:02 Europe/Berlin] Courses API called - Action: get_courses
+[03-Jan-2026 13:38:02 Europe/Berlin] Session user_id: not set
+[03-Jan-2026 13:38:02 Europe/Berlin] Session user_role: not set
+[03-Jan-2026 13:38:02 Europe/Berlin] POST teacher_id: not set
+[03-Jan-2026 13:38:02 Europe/Berlin] No user_id found - unauthorized
+[03-Jan-2026 13:38:05 Europe/Berlin] Courses API called - Action: get_courses
+[03-Jan-2026 13:38:05 Europe/Berlin] Session user_id: not set
+[03-Jan-2026 13:38:05 Europe/Berlin] Session user_role: not set
+[03-Jan-2026 13:38:05 Europe/Berlin] POST teacher_id: not set
+[03-Jan-2026 13:38:05 Europe/Berlin] No user_id found - unauthorized
+[03-Jan-2026 13:38:06 Europe/Berlin] Courses API called - Action: get_courses
+[03-Jan-2026 13:38:06 Europe/Berlin] Session user_id: not set
+[03-Jan-2026 13:38:06 Europe/Berlin] Session user_role: not set
+[03-Jan-2026 13:38:06 Europe/Berlin] POST teacher_id: not set
+[03-Jan-2026 13:38:06 Europe/Berlin] No user_id found - unauthorized
+[03-Jan-2026 13:38:08 Europe/Berlin] Courses API called - Action: get_courses
+[03-Jan-2026 13:38:08 Europe/Berlin] Session user_id: not set
+[03-Jan-2026 13:38:08 Europe/Berlin] Session user_role: not set
+[03-Jan-2026 13:38:08 Europe/Berlin] POST teacher_id: not set
+[03-Jan-2026 13:38:08 Europe/Berlin] No user_id found - unauthorized
+[03-Jan-2026 13:38:09 Europe/Berlin] Courses API called - Action: get_courses
+[03-Jan-2026 13:38:09 Europe/Berlin] Session user_id: not set
+[03-Jan-2026 13:38:09 Europe/Berlin] Session user_role: not set
+[03-Jan-2026 13:38:09 Europe/Berlin] POST teacher_id: not set
+[03-Jan-2026 13:38:09 Europe/Berlin] No user_id found - unauthorized
+[03-Jan-2026 13:38:18 Europe/Berlin] Courses API called - Action: get_courses
+[03-Jan-2026 13:38:18 Europe/Berlin] Session user_id: not set
+[03-Jan-2026 13:38:18 Europe/Berlin] Session user_role: not set
+[03-Jan-2026 13:38:18 Europe/Berlin] POST teacher_id: not set
+[03-Jan-2026 13:38:18 Europe/Berlin] No user_id found - unauthorized
+[03-Jan-2026 13:38:37 Europe/Berlin] Courses API called - Action: get_courses
+[03-Jan-2026 13:38:37 Europe/Berlin] Session user_id: not set
+[03-Jan-2026 13:38:37 Europe/Berlin] Session user_role: not set
+[03-Jan-2026 13:38:37 Europe/Berlin] POST teacher_id: not set
+[03-Jan-2026 13:38:37 Europe/Berlin] No user_id found - unauthorized
+[03-Jan-2026 13:39:00 Europe/Berlin] Courses API called - Action: get_courses
+[03-Jan-2026 13:39:00 Europe/Berlin] Session user_id: not set
+[03-Jan-2026 13:39:00 Europe/Berlin] Session user_role: not set
+[03-Jan-2026 13:39:00 Europe/Berlin] POST teacher_id: not set
+[03-Jan-2026 13:39:00 Europe/Berlin] No user_id found - unauthorized
+[03-Jan-2026 13:41:46 Europe/Berlin] Courses API called - Action: get_courses
+[03-Jan-2026 13:41:46 Europe/Berlin] Session user_id: not set
+[03-Jan-2026 13:41:46 Europe/Berlin] Session user_role: not set
+[03-Jan-2026 13:41:46 Europe/Berlin] POST teacher_id: not set
+[03-Jan-2026 13:41:46 Europe/Berlin] No user_id found - unauthorized
+[03-Jan-2026 13:41:47 Europe/Berlin] Courses API called - Action: get_courses
+[03-Jan-2026 13:41:47 Europe/Berlin] Session user_id: not set
+[03-Jan-2026 13:41:47 Europe/Berlin] Session user_role: not set
+[03-Jan-2026 13:41:47 Europe/Berlin] POST teacher_id: not set
+[03-Jan-2026 13:41:47 Europe/Berlin] No user_id found - unauthorized
+[03-Jan-2026 13:41:53 Europe/Berlin] Courses API called - Action: get_courses
+[03-Jan-2026 13:41:53 Europe/Berlin] Session user_id: not set
+[03-Jan-2026 13:41:53 Europe/Berlin] Session user_role: not set
+[03-Jan-2026 13:41:53 Europe/Berlin] POST teacher_id: not set
+[03-Jan-2026 13:41:53 Europe/Berlin] No user_id found - unauthorized
+[03-Jan-2026 13:42:04 Europe/Berlin] Courses API called - Action: get_courses
+[03-Jan-2026 13:42:04 Europe/Berlin] Session user_id: not set
+[03-Jan-2026 13:42:04 Europe/Berlin] Session user_role: not set
+[03-Jan-2026 13:42:04 Europe/Berlin] POST teacher_id: not set
+[03-Jan-2026 13:42:04 Europe/Berlin] No user_id found - unauthorized
+[03-Jan-2026 13:43:05 Europe/Berlin] Courses API called - Action: get_courses
+[03-Jan-2026 13:43:05 Europe/Berlin] Session user_id: not set
+[03-Jan-2026 13:43:05 Europe/Berlin] Session user_role: not set
+[03-Jan-2026 13:43:05 Europe/Berlin] POST teacher_id: not set
+[03-Jan-2026 13:43:05 Europe/Berlin] No user_id found - unauthorized
+[03-Jan-2026 13:43:17 Europe/Berlin] Courses API called - Action: get_courses
+[03-Jan-2026 13:43:17 Europe/Berlin] Session user_id: not set
+[03-Jan-2026 13:43:17 Europe/Berlin] Session user_role: not set
+[03-Jan-2026 13:43:17 Europe/Berlin] POST teacher_id: not set
+[03-Jan-2026 13:43:17 Europe/Berlin] No user_id found - unauthorized
+[03-Jan-2026 13:43:30 Europe/Berlin] Courses API called - Action: get_courses
+[03-Jan-2026 13:43:30 Europe/Berlin] Session user_id: not set
+[03-Jan-2026 13:43:30 Europe/Berlin] Session user_role: not set
+[03-Jan-2026 13:43:30 Europe/Berlin] POST teacher_id: not set
+[03-Jan-2026 13:43:30 Europe/Berlin] No user_id found - unauthorized
+[03-Jan-2026 13:48:03 Europe/Berlin] Courses API called - Action: get_courses
+[03-Jan-2026 13:48:03 Europe/Berlin] Session user_id: not set
+[03-Jan-2026 13:48:03 Europe/Berlin] Session user_role: not set
+[03-Jan-2026 13:48:03 Europe/Berlin] POST teacher_id: not set
+[03-Jan-2026 13:48:03 Europe/Berlin] No user_id found - unauthorized
+[03-Jan-2026 13:50:18 Europe/Berlin] Courses API called - Action: get_courses
+[03-Jan-2026 13:50:18 Europe/Berlin] Session user_id: not set
+[03-Jan-2026 13:50:18 Europe/Berlin] Session user_role: not set
+[03-Jan-2026 13:50:18 Europe/Berlin] POST teacher_id: not set
+[03-Jan-2026 13:50:18 Europe/Berlin] No user_id found - unauthorized
+[03-Jan-2026 13:51:07 Europe/Berlin] Courses API called - Action: get_courses
+[03-Jan-2026 13:51:07 Europe/Berlin] Session user_id: not set
+[03-Jan-2026 13:51:07 Europe/Berlin] Session user_role: not set
+[03-Jan-2026 13:51:07 Europe/Berlin] POST teacher_id: not set
+[03-Jan-2026 13:51:07 Europe/Berlin] No user_id found - unauthorized
+[03-Jan-2026 13:51:15 Europe/Berlin] Courses API called - Action: get_courses
+[03-Jan-2026 13:51:15 Europe/Berlin] Session user_id: not set
+[03-Jan-2026 13:51:15 Europe/Berlin] Session user_role: not set
+[03-Jan-2026 13:51:15 Europe/Berlin] POST teacher_id: not set
+[03-Jan-2026 13:51:15 Europe/Berlin] No user_id found - unauthorized
+[03-Jan-2026 13:51:26 Europe/Berlin] Courses API called - Action: get_courses
+[03-Jan-2026 13:51:26 Europe/Berlin] Session user_id: not set
+[03-Jan-2026 13:51:26 Europe/Berlin] Session user_role: not set
+[03-Jan-2026 13:51:26 Europe/Berlin] POST teacher_id: not set
+[03-Jan-2026 13:51:26 Europe/Berlin] No user_id found - unauthorized

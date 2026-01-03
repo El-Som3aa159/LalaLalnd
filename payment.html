@@ -328,20 +328,58 @@
         });
 
         function checkBalance() {
-            const userBalance = parseFloat(localStorage.getItem('userBalance') || '0');
-            const balanceInfo = document.getElementById('balanceInfo');
-            const paymentBtn = document.getElementById('paymentBtn');
-
-            if (userBalance >= courseData.price) {
-                balanceInfo.className = 'balance-info';
-                balanceInfo.innerHTML = `✅ رصيدك: <strong>${userBalance.toFixed(2)} ج.م</strong><br>كافي لشراء هذا الكورس`;
-                paymentBtn.disabled = false;
-            } else {
+            // Fetch actual balance from database instead of localStorage
+            const currentUser = JSON.parse(sessionStorage.getItem('currentUser'));
+            
+            if (!currentUser || !currentUser.id) {
+                const balanceInfo = document.getElementById('balanceInfo');
                 balanceInfo.className = 'balance-info insufficient';
-                const shortage = (courseData.price - userBalance).toFixed(2);
-                balanceInfo.innerHTML = `❌ رصيدك: <strong>${userBalance.toFixed(2)} ج.م</strong><br>ناقص: <strong>${shortage} ج.م</strong>`;
-                paymentBtn.disabled = true;
+                balanceInfo.innerHTML = '❌ خطأ: لم يتم التعرف على المستخدم';
+                document.getElementById('paymentBtn').disabled = true;
+                return;
             }
+
+            fetch('PHP/dashboard_api.php', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    action: 'get_student_balance',
+                    student_id: currentUser.id
+                })
+            })
+            .then(r => r.json())
+            .then(data => {
+                console.log('[Payment] Balance API response:', data);
+                
+                // Explicitly handle 0 value - don't use || operator for falsy values
+                const userBalance = data.success && data.balance !== null && data.balance !== undefined
+                    ? parseFloat(data.balance)
+                    : 0;
+                    
+                console.log('[Payment] Parsed balance:', userBalance);
+                console.log('[Payment] Course price:', courseData.price);
+                
+                const balanceInfo = document.getElementById('balanceInfo');
+                const paymentBtn = document.getElementById('paymentBtn');
+
+                if (userBalance >= courseData.price) {
+                    balanceInfo.className = 'balance-info';
+                    balanceInfo.innerHTML = `✅ رصيدك: <strong>${userBalance.toFixed(2)} ج.م</strong><br>كافي لشراء هذا الكورس`;
+                    paymentBtn.disabled = false;
+                } else {
+                    balanceInfo.className = 'balance-info insufficient';
+                    const shortage = (courseData.price - userBalance).toFixed(2);
+                    balanceInfo.innerHTML = `❌ رصيدك: <strong>${userBalance.toFixed(2)} ج.م</strong><br>ناقص: <strong>${shortage} ج.م</strong>`;
+                    paymentBtn.disabled = true;
+                }
+            })
+            .catch(error => {
+                console.error('[Payment] Error fetching balance:', error);
+                const balanceInfo = document.getElementById('balanceInfo');
+                balanceInfo.className = 'balance-info insufficient';
+                balanceInfo.innerHTML = '❌ خطأ في جلب الرصيد';
+                document.getElementById('paymentBtn').disabled = true;
+            });
         }
 
         function processPayment() {

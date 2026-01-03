@@ -27,6 +27,39 @@ function showNotification(message, type = 'success') {
     }, 3000);
 }
 
+// Fetch actual student balance from database
+function fetchStudentBalance(studentId) {
+    const balanceDisplay = document.getElementById('dashboardBalance');
+    if (!balanceDisplay) return;
+
+    fetch('PHP/dashboard_api.php', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            action: 'get_student_balance',
+            student_id: studentId
+        })
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            const balance = parseFloat(data.balance || 0).toFixed(2);
+            balanceDisplay.textContent = `الرصيد: ${balance} ج.م`;
+            // Also update localStorage for reference
+            localStorage.setItem('userBalance', balance);
+        } else {
+            balanceDisplay.textContent = `الرصيد: 0 ج.م`;
+            console.error('Failed to fetch balance:', data.message);
+        }
+    })
+    .catch(error => {
+        console.error('Error fetching balance:', error);
+        balanceDisplay.textContent = `الرصيد: 0 ج.م`;
+    });
+}
+
 // On Page Load Initialization
 window.onload = function() {
     // 1. Dark Mode Persistence
@@ -69,9 +102,9 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     const balanceDisplay = document.getElementById('dashboardBalance');
-    if (balanceDisplay) {
-        const currentBalance = localStorage.getItem('userBalance') || '0';
-        balanceDisplay.textContent = `الرصيد: ${currentBalance} ج.م`;
+    if (balanceDisplay && currentUser && currentUser.id) {
+        // Fetch actual balance from database
+        fetchStudentBalance(currentUser.id);
     }
 
     // --- 2. Sidebar Toggle Logic ---
@@ -343,26 +376,70 @@ document.addEventListener('DOMContentLoaded', function() {
     if (topUpButton && walletInput) {
         topUpButton.addEventListener('click', () => {
             const amount = parseFloat(walletInput.value);
+            const currentUser = JSON.parse(sessionStorage.getItem('currentUser'));
+            
+            console.log('[Wallet Top-up] Amount:', amount);
+            console.log('[Wallet Top-up] Current User:', currentUser);
+            
+            if (!currentUser || !currentUser.id) {
+                showNotification('خطأ: معلومات المستخدم غير متوفرة.', 'error');
+                console.error('[Wallet Top-up] Error: No user ID');
+                return;
+            }
+            
             if (amount && amount > 0) {
-                // 1. Get current balance
-                let currentBalance = parseFloat(localStorage.getItem('userBalance')) || 0;
+                // Show loading message
+                showNotification('جاري تحديث الرصيد...', 'success');
                 
-                // 2. Add amount
-                currentBalance += amount;
+                // Send API request to update balance in database
+                const requestPayload = {
+                    action: 'update_student_balance',
+                    student_id: currentUser.id,
+                    amount: amount
+                };
                 
-                // 3. Save back to localStorage
-                localStorage.setItem('userBalance', currentBalance);
+                console.log('[Wallet Top-up] Sending request:', requestPayload);
                 
-                // 4. Update Display
-                const balanceDisplay = document.getElementById('dashboardBalance');
-                if (balanceDisplay) {
-                    balanceDisplay.textContent = `الرصيد: ${currentBalance} ج.م`;
-                }
-
-                showNotification(`تم شحن المحفظة بمبلغ ${amount} جنيه بنجاح.`, 'success');
-                walletInput.value = ''; // Clear input
+                fetch('PHP/dashboard_api.php', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(requestPayload)
+                })
+                .then(response => {
+                    console.log('[Wallet Top-up] Response status:', response.status);
+                    return response.json();
+                })
+                .then(data => {
+                    console.log('[Wallet Top-up] API Response:', data);
+                    
+                    if (data.success) {
+                        // Update localStorage for reference
+                        localStorage.setItem('userBalance', data.balance);
+                        
+                        // Update dashboard display
+                        const balanceDisplay = document.getElementById('dashboardBalance');
+                        if (balanceDisplay) {
+                            const newBalance = parseFloat(data.balance).toFixed(2);
+                            balanceDisplay.textContent = `الرصيد: ${newBalance} ج.م`;
+                            console.log('[Wallet Top-up] Updated display balance to:', newBalance);
+                        }
+                        
+                        showNotification(`تم شحن المحفظة بمبلغ ${amount} جنيه بنجاح.`, 'success');
+                        walletInput.value = ''; // Clear input
+                    } else {
+                        showNotification('خطأ: ' + (data.message || 'فشل تحديث الرصيد'), 'error');
+                        console.error('[Wallet Top-up] Error:', data.message);
+                    }
+                })
+                .catch(error => {
+                    console.error('[Wallet Top-up] Fetch error:', error);
+                    showNotification('خطأ: حدث خطأ في تحديث الرصيد.', 'error');
+                });
             } else {
                 showNotification('الرجاء إدخال مبلغ صحيح.', 'error');
+                console.error('[Wallet Top-up] Invalid amount:', amount);
             }
         });
     }

@@ -247,8 +247,37 @@
             const urlParams = new URLSearchParams(window.location.search);
             const courseId = urlParams.get('id');
 
-            // 2. Load User Balance
-            let balance = parseInt(localStorage.getItem('userBalance')) || 1000;
+            // 2. Load User Balance from Database (not localStorage)
+            const currentUser = JSON.parse(sessionStorage.getItem('currentUser'));
+            let balance = 0;
+            
+            if (currentUser && currentUser.id) {
+                try {
+                    const balanceResponse = await fetch('PHP/dashboard_api.php', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            action: 'get_student_balance',
+                            student_id: currentUser.id
+                        })
+                    });
+                    const balanceData = await balanceResponse.json();
+                    console.log('[Course Details] Balance API response:', balanceData);
+                    
+                    if (balanceData.success) {
+                        // Explicitly handle 0 value - don't use || operator for falsy values
+                        balance = balanceData.balance !== null && balanceData.balance !== undefined 
+                            ? parseFloat(balanceData.balance) 
+                            : 0;
+                        console.log('[Course Details] Parsed balance:', balance);
+                    }
+                } catch (e) {
+                    console.error('Error fetching balance:', e);
+                    balance = 0;
+                }
+            }
+            
+            console.log('[Course Details] Calling updateBalanceDisplay with:', balance);
             updateBalanceDisplay(balance);
 
             // 3. Load Course Details from Database API
@@ -285,7 +314,6 @@
                 }
 
                 // Check if already enrolled from backend
-                const currentUser = JSON.parse(sessionStorage.getItem('currentUser'));
                 let isEnrolled = false;
                 
                 if (currentUser && currentUser.id) {
@@ -326,7 +354,7 @@
             }
 
             function updateBalanceDisplay(amount) {
-                document.getElementById('userBalanceDisplay').textContent = `الرصيد: ${amount} ج.م`;
+                document.getElementById('userBalanceDisplay').textContent = `الرصيد: ${amount.toFixed(2)} ج.م`;
             }
         });
     </script>
